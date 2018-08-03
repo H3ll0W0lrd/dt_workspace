@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    <RelativeLayout
+        android:id="@+id/content_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 标题栏 -->
+
+        <com.rtm.frm.view.NavTitle
+            android:id="@+id/nav_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_title_height"
+            rtmAttr:navLeftImg="@drawable/icon_back"
+            rtmAttr:navLeftImgHeight="@dimen/nav_title_img_height"
+            rtmAttr:navLeftImgWidth="@dimen/nav_title_img_width"
+            rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+            rtmAttr:navPaddingRight="@dimen/nav_title_padding_right" />
+        <!-- 第一个 -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nav_title" >
+
+            <LinearLayout
+                android:id="@+id/promotion_manager_list_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set_list"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_rounded"
+    android:divider="@color/friend_line"
+    android:dividerHeight="1px" >
+
+</ListView>

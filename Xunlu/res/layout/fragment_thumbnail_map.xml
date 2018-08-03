@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/test_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+    <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navLeftImg="@drawable/tab2_back"
+        rtmAttr:navLeftImgHeight="@dimen/nav_title_img_height"
+        rtmAttr:navLeftImgWidth="@dimen/nav_title_img_width"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">定位demo</string>
+    <string name="navigation_drawer_open">智慧图</string>
+    <string name="navigation_drawer_close">RTMAP</string>
+    <string name="action_settings">Settings</string>
+    <string name="startLocate">开启定位 </string>
+    <string name="stopLocate">停止定位</string>
+
+    <string-array name="main_list">
+        <item>基础定位</item>
+        <item>配置定位参数</item>
+        <item>定位+web地图</item>
+        <item>常见问题</item>
+    </string-array>
+
+</resources>

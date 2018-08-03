@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.rtm.frm.dianxin.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="floor"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text_size7" />
+
+    <TextView
+        android:id="@+id/tv_floor_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_floor"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="描述"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text_size7" />
+</RelativeLayout>

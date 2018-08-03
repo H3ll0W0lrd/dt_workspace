@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="app_name">采集工具</string>
+    <string name="title_username">输入用户名</string>
+    <string name="title_password">输入密码</string>
+    <string name="title_login">登录</string>
+    <string name="title_select_map">选择地图</string>
+    <string name="title_logout">注销</string>
+    <string name="title_select_gather_mode">选择采集模式</string>
+    <string name="title_gather_mode_normal">正常采集</string>
+    <string name="title_gather_mode_walk">边走边采</string>
+    <string name="message_file_downloaded">%s下载成功.</string>
+    <string name="message_download_file_fail">%s下载失败.</string>
+    <string name="title_download">下载</string>
+    <string name="title_downloading">下载中</string>
+    <string name="message_gather_cancelled">停止采集</string>
+    <string name="title_input_poi_name">请输入POI名字</string>
+    <string name="input_account">请输入用户名</string>
+    <string name="input_pas">请输入6位以上密码</string>
+    <string name="title_input_map_correction_info">请输入地图修正信息</string>
+    <string name="title_message">消息</string>
+    <string name="message_delete_wifi">是否删除该信号点?</string>
+    <string name="message_delete_history">是否删除于%s采集的全部信号点?</string>
+    <string name="title_show_names">显示POI名字</string>
+    <string name="title_commit">提交</string>
+    <string name="title_committing">提交中</string>
+    <string name="title_commit_wifi">提交信号点</string>
+    <string name="title_commit_poi">提交POI</string>
+    <string name="message_disconnect_wifi">是否断开wifi?</string>
+    <string name="title_stop_gather">停止采集</string>
+    <string name="title_start_gather">开始采集</string>
+    <string name="title_gather">开始</string>
+    <string name="message_upload_success">%s 上传成功.</string>
+    <string name="message_commit_wifi_points">请提交您的采集结果.</string>
+    <string name="format_gather_number">已采集%d个信号点</string>
+    <string name="message_not_select_map">未选择地图</string>
+    <string name="title_back_2_maps_select">地图</string>
+    <string name="delete_point">删除</string>
+    <string name="mark_point">标记</string>
+    <string name="stop">停止</string>
+    <string name="setting">设置</string>
+    <string name="back">返回</string>
+    <string name="go_on_gather">无连接，继续采集？</string>
+    <string name="title_param_setting">采集参数设置</string>
+    <string name="gather_button">采集按钮</string>
+    <string name="gather_info">采集信息</string>
+    <string name="door">门</string>
+    <string name="net_error">网络异常</string>
+    <string name="map_download_success_vector">矢量图下载完成</string>
+    <string name="map_download_start">下载中..</string>
+    <string name="map_download_success_bitmap">位图下载完成</string>
+    <string name="map_download_please_bitmap">请下载位图</string>
+    <string name="map_download_please_vector">请下载矢量图</string>
+    <string name="surplus_second">剩余%d秒</string>
+    <string name="beacon_down_success">更新完成</string>
+
+    <string-array name="set_inter_list">
+        <item>POI与路网采集(位图)</item>
+        <item>联合采集</item>
+        <item>终端采集</item>
+        <item>网络采集</item>
+        <item>POI采集</item>
+        <item>地图修正</item>
+        <item>无图采集</item>
+        <item>删除位图与矢量图</item>
+        <item>删除本层walk文件</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+    
+    <dimen name="dt_alarm_set_item_size">26dp</dimen>
+    <dimen name="dt_alarm_set_value_size">34dp</dimen>
+    <dimen name="dt_alarm_set_space_size">30sp</dimen>
+</resources>

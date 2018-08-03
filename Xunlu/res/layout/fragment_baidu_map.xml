@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+    
+    <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navLeftImg="@drawable/magnifier"
+        rtmAttr:navLeftImgHeight="@dimen/nav_title_img_height"
+        rtmAttr:navLeftImgWidth="@dimen/nav_title_img_width"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right" />
+
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@id/nav_title"
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/button_mode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp" />
+
+    <RelativeLayout
+        android:id="@+id/baidu_map_poi_detail_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_title"
+        android:background="@color/nav_title_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/baidu_map_build_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/fragment_baidu_map_poi_detail_name_padding"
+            android:paddingTop="@dimen/fragment_baidu_map_poi_detail_name_padding"
+            android:textColor="@color/fragment_baidu_map_poi_detail_name"
+            android:textSize="@dimen/fragment_baidu_map_poi_detail_name_size" />
+
+        <LinearLayout
+            android:id="@+id/detail_btn_lay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_baidu_map_poi_detail_btn_height"
+            android:layout_below="@id/baidu_map_build_name"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/baidu_map_into_room"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/route_line_room"
+                android:textColor="@color/fragment_baidu_map_poi_detail_btn" />
+
+            <TextView
+                android:id="@+id/baidu_map_go_here"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/route_line_plan"
+                android:textColor="@color/fragment_baidu_map_poi_detail_btn" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/detail_btn_lay"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFC000">
+        
+        <TextView android:id="@+id/idtitle_text"
+            android:text="提　示"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/msg_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请注意您的小孩是否在身边！"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击按钮3分钟内不再提醒"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <Button
+	        android:id="@+id/ok_btn1"
+	        android:text="知道了"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:background="#FFC000"
+	    	android:textColor="#FFFFFF"
+	    	android:textSize="22sp"
+	    	android:layout_weight="1"
+	    	android:layout_margin="2dp"/>
+	   	
+	   	<Button
+	        android:id="@+id/ok_btn2"
+	        android:text="求助"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:background="#FFC000"
+	    	android:textColor="#FFFFFF"
+	    	android:textSize="22sp"
+	    	android:layout_weight="1"
+	    	android:layout_margin="2dp"/>
+
+    </LinearLayout>
+    
+
+</LinearLayout>

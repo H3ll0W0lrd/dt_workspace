@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textColor="@color/black" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#575757"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/uuidtextview"
+              android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/uuidselectimage"
+            android:layout_width="130dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dvidline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000" >
+    </View>
+
+</LinearLayout>

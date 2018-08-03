@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/surfaceview_ar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ar_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="32dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_build_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/text_size4" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ar_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:onClick="myClick"
+        android:visibility="invisible"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_close" />
+
+    <ImageView
+        android:id="@+id/imageview_arrow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ar_arrow" />
+
+
+    <Button
+        android:id="@+id/btn_floor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/main_button_bg"
+        android:onClick="myClick"
+        android:visibility="invisible"
+        android:text="楼层" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#88000000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/toast_bg" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/toast_corner"
+        android:bottomRightRadius="@dimen/toast_corner"
+        android:topLeftRadius="@dimen/toast_corner"
+        android:topRightRadius="@dimen/toast_corner" />
+
+    <stroke
+        android:width="1px"
+        android:color="@color/toast_bg" />
+</shape>

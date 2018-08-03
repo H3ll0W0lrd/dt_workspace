@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_item_press">#459EDA</color>
+    <color name="bg_item_normal">#EFEFEF</color>
+    <color name="blue">#a80ac3</color>
+    <color name="sign_red_color">#fb0237</color>
+    <color name="green">#d2fea9</color>
+    <color name="friend_line">#e9ebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+     <color name="center_record_item_time_color">#4c6466</color>
+ <!-- 白色 -->
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/tv_bz_key"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="可口可"
+            android:textColor="@color/bz_list_item_tv_name"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_bz_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="DALAKLDHH"
+             android:layout_centerVertical="true"
+            android:textColor="@color/bz_list_item_tv_name"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_bz_get"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tv_bz_key"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+             android:layout_centerVertical="true"
+            android:text="已领取"
+            android:textColor="@color/bz_list_item_tv_name"
+            android:textSize="15dp" 
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="登录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/et_style"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/center_record_item_text_one_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/send_auth_sms"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="发送验证码"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/sms"
+                style="@style/et_style"
+                android:layout_toLeftOf="@+id/send_auth_sms"
+                android:hint="验证码"
+                android:inputType="number"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:src="@color/center_record_item_text_one_color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="250dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/blue_btn"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/login_text_color"
+        android:textSize="22sp" />
+
+</RelativeLayout>

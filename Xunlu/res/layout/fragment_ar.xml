@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/view_surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/ar_tv_angle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="角度"
+        android:textColor="#ff0000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/ar_bt_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/arguide_close" />
+    
+    <!-- 圆形导航方向指引 -->
+    <com.rtm.frm.AR.ARCircleView 
+        android:id="@+id/ar_guide_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 放poi overlay用 -->
+
+    <RelativeLayout
+        android:id="@+id/ar_rel_items"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+    </RelativeLayout>
+    
+<!--     <com.rtm.frm.AR.drawView 
+        android:id="@+id/drawLine"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"/> -->
+</RelativeLayout>

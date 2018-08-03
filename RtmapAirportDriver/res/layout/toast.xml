@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toast_height" 
+        android:layout_marginLeft="@dimen/toast_margin_left"
+        android:layout_marginRight="@dimen/toast_margin_left"
+        android:gravity="center"
+        android:background="@drawable/toast_bg">
+
+        <TextView
+            android:id="@+id/toast_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置成功"
+            android:layout_marginLeft="@dimen/toast_text_margin_left"
+            android:layout_marginRight="@dimen/toast_text_margin_left"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/toast_text_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/build_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/map_show_build_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/map_show_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/map_show_build_name" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        layout="@layout/layout_zoom" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/layout_zoom"
+        android:layout_marginTop="@dimen/fragment_map_control_img_margin"
+        layout="@layout/layout_locate" />
+
+    <LinearLayout
+        android:id="@+id/button_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp" >
+
+        <Button
+            android:id="@+id/btn_favorable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优惠" />
+
+        <Button
+            android:id="@+id/btn_change_build"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换建筑" />
+
+        <Button
+            android:id="@+id/btn_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="寻宝"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动"/>
+
+        <Button
+            android:id="@+id/btn_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的" />
+
+        <Button
+            android:id="@+id/btn_search_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换楼层" />
+    </LinearLayout>
+
+</RelativeLayout>

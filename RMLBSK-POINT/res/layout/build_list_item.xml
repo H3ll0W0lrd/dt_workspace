@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/message"
+        style="@style/set_layout_style" >
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/set_text_style"
+            android:text="消息中心" />
+
+        <ImageView style="@style/set_arrow_style" />
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/set_line_style"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

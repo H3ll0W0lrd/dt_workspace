@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<city_area_list>
+    <city_area>
+        <city_area_name>首都机场</city_area_name>
+        <city_name>北京</city_name>
+        <build>
+		  <release>1</release>
+		  <id>860100010030100003</id>
+		  <name>北京首都机场-T3C</name>
+		  <size></size>
+		  <name_jp_2>T3</name_jp_2>
+		  <lat>40.0562000000</lat>
+		  <long>116.6147000000</long>
+		  <floors>F1_F2_F3_F4</floors><floors_maps_tile><floor>F1</floor><description>3</description><description_>餐饮·购物</description_><width>1068.000</width><height>918.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>2</description><description_>到达·接机</description_><width>1068.000</width><height>918.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>1068.000</width><height>918.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F4</floor><description>1</description><description_>出发·送机</description_><width>1068.000</width><height>918.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>3</version_data>
+		   <version_map>6</version_map>
+		</build> 
+    
+        <build>
+		  <release>1</release>
+		  <id>860100010030100001</id>
+		  <name>首都机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>40.0810000000</lat>
+		  <long>116.5879000000</long>
+		  <floors>F1_F2_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>345.000</width><height>295.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>345.000</width><height>295.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>3</description><description_>餐饮·购物</description_><width>345.000</width><height>295.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>8</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>860100010030100002</id>
+		  <name>首都机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>40.0801000000</lat>
+		  <long>116.5946000000</long>
+		  <floors>B1_F1_F2_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>825.000</width><height>385.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>825.000</width><height>385.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>3</description><description_>餐饮·购物</description_><width>825.000</width><height>385.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>B1</floor><description>3</description><description_>餐饮·购物</description_><width>825.000</width><height>385.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>5</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>860100010030100004</id>
+		  <name>首都机场T2航站楼(3D)</name>
+		  <size></size>
+		  <name_jp_2>T2航站楼(3D)</name_jp_2>
+		  <lat>40.0562000000</lat>
+		  <long>116.6147000000</long>
+		  <floors>F1_F2_F3</floors><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>2400.000</width><height>1800.000</height><level_tile>17715_8860_4430_2215</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>3</description><description_>餐饮·购物</description_><width>2400.000</width><height>1800.000</height><level_tile>17715_8860_4430_2215</level_tile></floors_maps_tile><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>2400.000</width><height>1800.000</height><level_tile>17715_8860_4430_2215</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> </city_area><city_area><city_area_name>永泰自在香山</city_area_name><city_name>北京</city_name><build>
+		  <release>1</release>
+		  <id>860100010040500002</id>
+		  <name>自在香山169号楼</name>
+		  <size></size>
+		  <name_jp_2>169-2</name_jp_2>
+		  <lat>39.9752093977</lat>
+		  <long>116.2345382200</long>
+		  <floors>F2</floors><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>21.000</width><height>21.000</height><level_tile>98</level_tile></floors_maps_tile><version_data>0</version_data>
+		   <version_map>0</version_map>
+		</build> </city_area><city_area><city_area_name>咸阳机场</city_area_name><city_name>西安</city_name><build>
+		  <release>1</release>
+		  <id>861100010010100002</id>
+		  <name>西安咸阳机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>34.4445444400</lat>
+		  <long>108.7591500000</long>
+		  <floors>F1_F1.5_F2</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>858.000</width><height>169.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F1.5</floor><description>2</description><description_>到达·接机</description_><width>858.000</width><height>169.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>858.000</width><height>169.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>861100010010100003</id>
+		  <name>西安咸阳机场T3航站楼</name>
+		  <size></size>
+		  <name_jp_2>T3</name_jp_2>
+		  <lat>34.4445444400</lat>
+		  <long>108.7591500000</long>
+		  <floors>F1_F1.5_F2</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>884.000</width><height>520.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F1.5</floor><description>4</description><description_>出发.值机</description_><width>884.000</width><height>520.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>884.000</width><height>520.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> </city_area><city_area><city_area_name>双流机场</city_area_name><city_name>成都</city_name><build>
+		  <release>1</release>
+		  <id>861300010150100001</id>
+		  <name>成都双流机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>30.5815888900</lat>
+		  <long>103.9562750000</long>
+		  <floors>F1_F2</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>780.000</width><height>390.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>780.000</width><height>390.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>861300010150100002</id>
+		  <name>成都双流机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>30.5815888900</lat>
+		  <long>103.9562750000</long>
+		  <floors>B2_F1_F3_F4</floors><floors_maps_tile><floor>B2</floor><description>4</description><description_>出发.值机</description_><width>910.000</width><height>546.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>910.000</width><height>546.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>4</description><description_>出发.值机</description_><width>910.000</width><height>546.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>910.000</width><height>546.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F4</floor><description>3</description><description_>餐饮·购物</description_><width>910.000</width><height>546.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>1</version_data>
+		   <version_map>2</version_map>
+		</build> </city_area><city_area><city_area_name>江北机场</city_area_name><city_name>重庆</city_name><build>
+		  <release>0</release>
+		  <id>861400010080100001</id>
+		  <name>重庆江北机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>29.7188000000</lat>
+		  <long>106.6343000000</long>
+		  <floors>F1_F3</floors><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>861400010080100002</id>
+		  <name>重庆江北机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>29.7188000000</lat>
+		  <long>106.6343000000</long>
+		  <floors>F1_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>899.000</width><height>432.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>899.000</width><height>432.000</height><level_tile>3930_1970_985_490</level_tile></floors_maps_tile><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> </city_area><city_area><city_area_name>虹桥机场</city_area_name><city_name>上海</city_name><build>
+		  <release>1</release>
+		  <id>862300010060100001</id>
+		  <name>上海虹桥机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>31.1939400000</lat>
+		  <long>121.3462300000</long>
+		  <floors>F1_F2</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>427.000</width><height>510.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>427.000</width><height>510.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>862300010060100002</id>
+		  <name>上海虹桥机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>31.1943100000</lat>
+		  <long>121.3288000000</long>
+		  <floors>F1_F2_F2.5_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>1074.000</width><height>922.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>4</description><description_>出发.值机</description_><width>1074.000</width><height>922.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F2.5</floor><description>1</description><description_>出发·送机</description_><width>1074.000</width><height>922.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>1074.000</width><height>922.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> </city_area><city_area><city_area_name>浦东机场</city_area_name><city_name>上海</city_name><build>
+		  <release>1</release>
+		  <id>862300010100100001</id>
+		  <name>上海浦东机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>31.1513800000</lat>
+		  <long>121.8088700000</long>
+		  <floors>F1_F2_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>1050.000</width><height>726.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>3</description><description_>餐饮·购物</description_><width>1050.000</width><height>726.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>1050.000</width><height>726.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>862300010100100002</id>
+		  <name>上海浦东机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>T2</name_jp_2>
+		  <lat>31.1495800000</lat>
+		  <long>121.8038100000</long>
+		  <floors>F1_F2_F3</floors><floors_maps_tile><floor>F1</floor><description>4</description><description_>出发.值机</description_><width>912.000</width><height>578.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>2</description><description_>到达·接机</description_><width>912.000</width><height>578.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>912.000</width><height>578.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><version_data>2</version_data>
+		   <version_map>2</version_map>
+		</build> </city_area><city_area><city_area_name>白云机场</city_area_name><city_name>广州</city_name><build>
+		  <release>1</release>
+		  <id>863200010050100001</id>
+		  <name>广州白云机场航站楼</name>
+		  <size></size>
+		  <name_jp_2>T1</name_jp_2>
+		  <lat>23.3863000000</lat>
+		  <long>113.3029200000</long>
+		  <floors>B1_F1_F3</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>1314.000</width><height>1172.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>F3</floor><description>1</description><description_>出发·送机</description_><width>1314.000</width><height>1172.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><floors_maps_tile><floor>B1</floor><description>3</description><description_>餐饮·购物</description_><width>1314.000</width><height>1172.000</height><level_tile>3930_1970_983</level_tile></floors_maps_tile><version_data>3</version_data>
+		   <version_map>3</version_map>
+		</build> </city_area><city_area><city_area_name>宝安机场</city_area_name><city_name>深圳</city_name><build>
+		  <release>0</release>
+		  <id>863200020050100001</id>
+		  <name>深圳宝安机场T1航站楼</name>
+		  <size></size>
+		  <name_jp_2>国际</name_jp_2>
+		  <lat>22.6465111100</lat>
+		  <long>113.8159527800</long>
+		  <floors>F1_F2</floors><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> <build>
+		  <release>1</release>
+		  <id>863200020050100002</id>
+		  <name>深圳宝安机场T2航站楼</name>
+		  <size></size>
+		  <name_jp_2>国内</name_jp_2>
+		  <lat>22.6465111100</lat>
+		  <long>113.8159527800</long>
+		  <floors>F1_F2</floors><floors_maps_tile><floor>F1</floor><description>2</description><description_>到达·接机</description_><width>732.000</width><height>598.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><floors_maps_tile><floor>F2</floor><description>1</description><description_>出发·送机</description_><width>732.000</width><height>598.000</height><level_tile>3930_1970_983_490</level_tile></floors_maps_tile><version_data>1</version_data>
+		   <version_map>1</version_map>
+		</build> </city_area></city_area_list>

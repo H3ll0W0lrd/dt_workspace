@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">RTMAP地图</string>
+	<string-array name="map_list">
+	    <item>打开地图</item>
+	    <item>定位显示</item>
+	    <item>关键字搜索</item>
+	    <item>分类搜索</item>
+	    <item>路线规划</item>
+	    <item>路线动画展示</item>
+	</string-array>
+	
+	<string name="navigation_drawer_open">智慧图</string>
+    <string name="navigation_drawer_close">RTMAP</string>
+    <string name="action_settings">Settings</string>
+</resources>

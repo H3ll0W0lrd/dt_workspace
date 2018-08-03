@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bar">#f03c73</color>
+    <color name="tab_color">#f1273a</color>
+    <color name="login_background">#00a2ff</color>
+    <color name="login_txt_color">#606161</color>
+    <color name="register">#37b6ff</color>
+    <color name="login">#0992e0</color>
+    <color name="exist">#aee3ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_dark">#5d5e5f</color>
+    <color name="black">#000000</color>
+    <color name="line_gray_1">#cccccc</color>
+    <color name="main_color">#FC5A49</color>
+    <color name="gray">#b4b4b4</color>
+    <color name="login_text">#8f8f8f</color>
+    <color name="login_cancel">#2196f3</color>
+    <color name="main_text">#656d72</color>
+    <color name="coupon_button">#0170b0</color>
+    <color name="coupon_button_text">#d8e9ef</color>
+    <color name="coupon_back">#70cafe</color>
+    <color name="coupon_text">#656d72</color>
+    <color name="coupon_text2">#a1acb0</color>
+    <color name="shop_gray">#b9b9b9</color>
+    <color name="shop_back">#edf1f4</color>
+    <color name="shop_time">#a1acb0</color>
+    <color name="orange">#fcd774</color>
+    <color name="light_red">#f9cbd1</color>
+    <color name="green">#bee82b</color>
+    <color name="message_color">#e5f1f6</color>
+    <color name="search_catepoi">#FAFAFA</color>
+    <color name="not_found_color">#8da9b8</color>
+    <color name="drawer_back">#001f30</color>
+    <color name="classify_color">#f2fafd</color>
+    <color name="classify_sail_text">#82898c</color>
+    <color name="choice_text">#aee3ff</color>
+    <color name="coupon_line">#ebf4f7</color>
+    <color name="floor_text">#a8b8be</color>
+    <color name="integer_text">#383838</color>
+    <color name="shop_line">#7bd1ff</color>
+    <color name="dialog_text_color">#745243</color>
+    <color name="dialog_text_user">#d0d0d0</color>
+    <color name="dialog_back">#00000000</color>
+    <color name="dialog_greed">#a6d30c</color>
+    <color name="box_text_color">#320d00</color>
+    <color name="box_text_color_two">#521700</color>
+    <color name="shop_line_text">#51585b</color>
+    <color name="choice_line_text">#b1e3ff</color>
+    <color name="add_shop_list_back">#e5f1f6</color>
+    <color name="classify_back">#00bcd4</color>
+    <color name="red_color">#e8305c</color>
+    <color name="tag_back">#BCE7FF</color>
+    <color name="tag_back_sel">#00A2FF</color>
+    <color name="tag_text_color">#596266</color>
+    <color name="game_rule_back">#e3f8ff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="dt_alarm_set_value_text_color">#39c0e7</color>
+    
+    <color name="center_record_item_text_color">#a3acaf</color>
+    <color name="center_record_item_text_one_color">#9caaae</color>
+    <color name="center_record_item_time_color">#4c6466</color>
+    
+    <color name="text_color">#bfbfbf</color>
+    <color name="hint_text_color">#cecece</color>
+    <color name="line_color">#cec4c4</color>
+
+    <color name="user_avatar_bg">#454e56</color>
+    <color name="user_bg">#3a434c</color>
+    <color name="user_line_color">#53bdf9</color>
+    <color name="floor_text_on_color">#898989</color>
+
+    <color name="camera_shutter_outer_ring">#ff408dcb</color>
+
+</resources>

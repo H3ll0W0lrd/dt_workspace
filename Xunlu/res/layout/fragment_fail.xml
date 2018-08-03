@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/succ_rel_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/succ_light" >
+
+        <TextView
+            android:id="@+id/succ_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="对不起!!"
+            android:textColor="@color/bz_fail_title"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/succ_img_baoxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/succ_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp"
+            android:src="@drawable/baoxiang_fail" />
+
+        <TextView
+            android:id="@+id/succ_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/succ_img_baoxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="您的宝物已经被别人领走"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/fail_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/succ_keep" />
+
+        <Button
+            android:id="@+id/fail_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/succ_quit" />
+    </RelativeLayout>
+
+</RelativeLayout>

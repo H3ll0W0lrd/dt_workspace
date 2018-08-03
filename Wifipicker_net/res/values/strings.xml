@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">WifiPicker</string>    
+    <string name="title_username">User Name</string>
+    <string name="title_password">Password</string>
+    <string name="title_login">Login</string>
+    
+    <string name="title_select_map">Select map</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_select_gather_mode">Select gathering mode</string>
+    <string name="title_gather_mode_normal">Normal</string>
+    <string name="title_gather_mode_walk">Walk</string>
+    <string name="message_file_downloaded">%s is downloaded.</string>
+    <string name="message_download_file_fail">%s is fail.</string>
+    <string name="title_download">Download</string>
+    <string name="title_downloading">Downloading</string>
+
+    <string name="message_gather_cancelled">The current gathering is cancelled.</string>
+    <string name="title_input_poi_name">Please input POI name</string>
+    <string name="title_input_map_correction_info">Please input map correction information</string>
+    <string name="title_message">Message</string>
+    <string name="message_delete_wifi">Are you sure to delete the point?</string>
+    <string name="message_delete_history">Are you sure to delete the line that is gathered at %s?</string>
+    <string name="title_show_names">Show names of POIs</string>
+    <string name="title_commit">Commit</string>
+    <string name="title_commit_wifi">Commit WIFI</string>
+    <string name="title_commit_poi">Commit POI</string>
+    <string name="message_disconnect_wifi">Disconnect wifi?</string>
+    <string name="title_stop_gather">Stop gathering</string>
+    <string name="title_start_gather">Start gathering</string>
+    <string name="title_gather">Gather</string>
+    <string name="message_upload_success">%s Upload successfully.</string>
+    <string name="message_commit_wifi_points">Please commit your gathering results.</string>
+    <string name="format_gather_number">%d points has gathered</string>
+    <string name="message_not_select_map">No selection map</string>
+    <string name="title_back_2_maps_select">maps</string>
+    <string name="delete_point">delete</string>
+    <string name="mark_point">mark</string>
+    <string name="stop">stop</string>
+    <string name="setting">setting</string>
+    <drawable name="bkcolor">#ffffff</drawable>
+    <string name="back">back</string>
+    <string name="go_on_gather">Connection is broken, continue to collect?</string>
+    <string name="title_param_setting">Parameter Settings</string>
+    <string name="gather_button">gather button</string>
+    <string name="gather_info">gather information</string>
+    
+    <!-- 地图Key -->
+    <string name="map_key">LHMQP3TI7X</string>
+    
+</resources>

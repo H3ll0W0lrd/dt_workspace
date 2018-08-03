@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="下载图标"
+        android:scaleType="center"
+        android:src="@android:drawable/stat_sys_download" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="7dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@android:style/TextAppearance.StatusBar.EventContent.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true" />
+
+        <ProgressBar
+            android:id="@+id/prograss_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="8dp"
+            android:paddingRight="25dp" />
+    </RelativeLayout>
+
+</LinearLayout>

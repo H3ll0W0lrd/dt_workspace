@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tab1_list_item_bg" >
+
+    <!-- 这个部分用统一的title -->
+    <FrameLayout
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_title_height"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/line" />
+    </FrameLayout>
+
+    <RelativeLayout 
+        android:id="@+id/tab2_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fragment_setting_item_height"
+        android:layout_below="@+id/nav_title"
+        android:layout_marginTop="15dp" 
+        android:background="@color/white"
+        android:clickable="true">
+        
+        <ImageView 
+            android:id="@+id/setting_item1_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_setting"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView 
+            android:id="@+id/setting_item1_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/setting_item1_img_1"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_more"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/tab2_setting_item_bg"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/tab2_item2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fragment_setting_item_height"
+        android:layout_below="@+id/tab2_item1" 
+        android:background="@color/white"
+        android:clickable="true">
+        
+        <ImageView 
+            android:id="@+id/setting_item2_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_about"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView 
+            android:id="@+id/setting_item2_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/setting_item2_img_1"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_more"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+        
+         <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/tab2_setting_item_bg"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

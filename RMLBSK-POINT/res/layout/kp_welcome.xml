@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="#09091a" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_icon" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/login_rtmap" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/login_phone" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@color/grayblack" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/et_style"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_toLeftOf="@+id/send_auth_sms"
+                    android:background="@color/white" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/login_auth" />
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:src="@color/grayblack" />
+
+                    <EditText
+                        android:id="@+id/sms"
+                        style="@style/et_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:hint="验证码"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/send_auth_sms"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="#ababab"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#f33c5a"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

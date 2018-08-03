@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/surfaceview_ar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ar_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_floor"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="楼层"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" >
+    </com.rtm.frm.map.MapView>
+
+    <ImageView
+        android:id="@+id/imageview_arrow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ar_arrow" />
+
+    <TextView
+        android:id="@+id/ar_distance_text"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/icon_close"
+        android:onClick="myClick" />
+
+</RelativeLayout>

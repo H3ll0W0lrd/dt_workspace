@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round"
+    android:orientation="vertical"
+    android:paddingBottom="30dp" >
+
+    <RelativeLayout
+        style="@style/title_bar_style"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            style="@style/title_font_style"
+            android:text="导航成功"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dialog_back"
+            style="@style/title_back_style"
+            android:layout_width="50dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/dialog_back_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/page_bg" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/navigate_ok_icon1" />
+
+    <ImageView
+        android:id="@+id/navigate_ok"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/navigate_ok_icon2" />
+
+</LinearLayout>

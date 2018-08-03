@@ -1,0 +1,141 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 标题样式 -->
+    <style name="title_bar_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">#333333</item>
+    </style>
+    <!-- 标题栏字体样式 -->
+    <style name="title_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_header_text">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#011E4B</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="style_common_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:layout_marginBottom">2dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">2dip</item>
+    </style>
+
+    <style name="style_white_shadow">
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="style_black_shadow">
+        <item name="android:shadowColor">#FFF</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="style_xunlu_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="style_menu_dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- activity不变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:minWidth">70dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_btn</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 去除背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!-- 自定义dialog样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog"> <!-- name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item> <!-- 隐藏标题栏 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

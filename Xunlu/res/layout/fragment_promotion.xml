@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F6F7" >
+
+    <!-- 这个部分用统一的title -->
+
+    <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right"
+        rtmAttr:navRightText="@string/promotion_manager" />
+
+    <ScrollView
+        android:id="@+id/promotion_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 积分兑换栏 -->
+
+            <LinearLayout
+                android:id="@+id/rel_jifen"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/lin_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img_jifen_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@drawable/icon_glod_exchange" />
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="积分兑换" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img_jifen_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@drawable/icon_easy_stop" />
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="停车易" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/img_jifen_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@drawable/icon_best_favorable" />
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="购优惠" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/rel_jifen"
+                android:background="@color/line" />
+
+            <!-- item列表 -->
+
+            <LinearLayout
+                android:id="@+id/group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/group3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <include
+                android:id="@+id/promotion_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group3"
+                android:layout_marginTop="10dp"
+                layout="@layout/fragment_promotion_item" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

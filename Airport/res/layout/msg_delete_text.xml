@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:text="清除历史记录"
+    android:background="#d69090"
+    android:textColor="@color/white"
+    android:textSize="16sp" />

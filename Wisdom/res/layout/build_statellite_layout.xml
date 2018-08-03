@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rtmap.wisdom.util.view.DTSatelliteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/build_statellite"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="@android:color/transparent" >
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_add"
+        android:orientation="horizontal" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text0"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image0"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text1"
+            style="@style/statellite_text_style"
+            android:text="背景" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image1"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text2"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image2"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha3" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text3"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image3"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha4" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text4"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image4"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha5" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text5"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image5"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha3" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/build_s_bg_white1"
+        android:gravity="center" >
+
+        <com.rtmap.wisdom.util.view.MarqueeTextView
+            android:id="@+id/text6"
+            style="@style/statellite_text_style" />
+
+        <ImageView style="@style/statellite_icon_style" />
+
+        <ImageView
+            android:id="@+id/image6"
+            style="@style/statellite_image_style"
+            android:src="@drawable/like_cha1" />
+    </FrameLayout>
+
+</com.rtmap.wisdom.util.view.DTSatelliteLayout>

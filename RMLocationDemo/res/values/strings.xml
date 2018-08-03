@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">RMLocationDemo</string> -->
+    <string name="app_name">梅斯信息3D</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="indoor">正在获取室内位置信息</string>
+    <string name="gps">正在获取GPS信息</string>
+    <string name="unknow">未知</string>
+	<string name="startLocate">开启定位 </string>
+	<string name="stopLocate">停止定位</string>
+	<string name="locateSdkVersion">RTMAP SDK: </string>
+	<string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="follow">跟随</string>
+    <string name="freedom">自由</string>
+	
+    <string-array name="main_list">
+        <item>纯定位</item>
+        <item>纯地图</item>
+        <item>定位与地图结合</item>
+        <item>建筑物列表</item>
+        <item>html定位地图</item>
+        <item>地图配色</item>
+        <item>animator动画</item>
+        <item>定位点最近的POI</item>
+        <item>POI居中</item>
+        <item>长按操作</item>
+        <item>导航</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edt_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_test"
+        android:hint="楼层"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_set_flor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_test"
+        android:layout_toRightOf="@+id/edt_floor"
+        android:text="首都机场楼层确定" />
+
+    <Button
+        android:id="@+id/btn_ftp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_test"
+        android:layout_toRightOf="@+id/btn_set_flor"
+        android:text="ftp测试"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cate_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/wenxuntai_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/wenxuntai" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="问讯处" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weishengjian_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/weishengjian" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="卫生间" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zhijiguitai_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/zhijiguitai" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="值机柜台" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/anjian_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/anjian" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="安检" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dianti_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/dianti" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="电梯" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/meishi_layout"
+                style="@style/cate_layout_style" >
+
+                <ImageView
+                    style="@style/cate_icon_style"
+                    android:src="@drawable/canyin" />
+
+                <TextView
+                    style="@style/cate_text_style"
+                    android:text="美食" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/line_color" />
+
+</LinearLayout>

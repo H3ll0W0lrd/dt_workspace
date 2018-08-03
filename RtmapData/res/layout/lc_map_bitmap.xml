@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_bar"
+        style="@style/title_bar_style"
+        layout="@layout/title_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.rtmap.locationcheck.util.map.MapWidget
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/mark"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_purple_round"
+                android:text="标记"
+                android:textColor="@color/purple_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/mark"
+                android:background="@drawable/btn_purple_round"
+                android:text="开始"
+                android:textColor="@color/purple_color"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_direction_right"
+                style="@style/dirction_btn_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="   R   " />
+
+            <Button
+                android:id="@+id/btn_direction_down"
+                style="@style/dirction_btn_style"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@id/btn_direction_right"
+                android:background="@drawable/btn_purple_round"
+                android:text="   D   " />
+
+            <Button
+                android:id="@+id/btn_direction_left"
+                style="@style/dirction_btn_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toLeftOf="@id/btn_direction_down"
+                android:background="@drawable/btn_purple_round"
+                android:text="   L   " />
+
+            <Button
+                android:id="@+id/btn_direction_up"
+                style="@style/dirction_btn_style"
+                android:layout_above="@id/btn_direction_down"
+                android:layout_alignRight="@+id/btn_direction_down"
+                android:text="   U   " />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

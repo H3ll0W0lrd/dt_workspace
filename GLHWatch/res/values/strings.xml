@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">儿童安全报警</string>
+    <string name="title_activity_id">IDActivity</string>
+    <string name="title_activity_alert">AlertActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_noification">NoificationActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_no_wifi">NoWifiActivity</string>
+    <string name="title_activity_help_notification">HelpNotificationActivity</string>
+
+</resources>

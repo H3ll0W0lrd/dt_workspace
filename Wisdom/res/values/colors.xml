@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search_et_bordor">#d1d1d1</color>
+    <color name="page_bg">#f7f7f7</color>
+    <color name="search_text_color">#cecdd2</color>
+    <color name="list_grid_item_text">#4f4f5f</color>
+    <color name="text_color1">#9f9eaf</color>
+</resources>

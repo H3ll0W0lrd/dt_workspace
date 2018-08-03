@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/cate_rounded_up"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="购物"
+        android:textColor="@color/grid_item_text_up"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/add_cate"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@android:id/list"
+        android:background="#EFEFEF"
+        android:divider="@color/bg_item_press"
+        android:dividerHeight="0.5dp"
+        android:fadingEdgeLength="0dp"
+        android:layoutAnimation="@anim/list_view"
+        />
+<!-- android:divider 分隔线
+        android:dividerHeight 分隔线高度
+        android:fadingEdgeLength 模糊边缘的长度-->

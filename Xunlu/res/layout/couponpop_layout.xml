@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qipao" >
+
+    <LinearLayout
+        android:id="@+id/couponpop_contentlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/couponpop_buttonlayout"
+        android:layout_toRightOf="@+id/couponpop_buttonlayout"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/couponpop_buttonlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp" >
+
+        <ImageButton
+            android:id="@+id/couponpop_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/icon_navigate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/couponpop_buttonlayout"
+        android:gravity="center"
+        android:orientation="vertical"
+         android:paddingTop="10dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/couponpop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#BF0218"
+            android:textSize="18sp" />
+   
+        <TextView
+            android:id="@+id/couponpop_content"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:layout_marginTop="4dp"
+            android:text="contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/couponpop_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/couponpop_buttonlayout"
+        android:layout_toLeftOf="@+id/linearLayout1"
+        android:background="@drawable/icon_share_inmap" />
+
+</RelativeLayout>

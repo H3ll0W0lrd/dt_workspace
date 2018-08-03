@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        style="@style/title_bar_style" >
+
+        <RelativeLayout
+            android:id="@+id/build_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/build_content"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/et_round_border"
+                android:hint="请输入商场名称"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:textColor="@color/search_text_color"
+                android:textColorHint="@color/search_text_color"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignLeft="@+id/build_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/build_content_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/build_cancel"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/list_grid_item_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#d1d1d1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/build_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/back"
+                style="@style/title_back_style" />
+
+            <TextView
+                style="@style/title_font_style"
+                android:text="商场标签" />
+
+            <TextView
+                android:id="@+id/build_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="编辑"
+                android:textColor="@color/list_grid_item_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#d1d1d1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical" >
+
+        <com.rtmap.wisdom.util.listview.BuildAnimListview
+            android:id="@+id/build_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/page_bg"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" >
+        </com.rtmap.wisdom.util.listview.BuildAnimListview>
+    </RelativeLayout>
+
+</RelativeLayout>

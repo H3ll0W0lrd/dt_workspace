@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- dialog -->
+    <dimen name="dialog_loading_text_size">15dp</dimen>
+    <dimen name="dialog_loading_text_margin_top">5dp</dimen>
+    
+    <!-- sliding menu -->
+    <dimen name="sliding_menu_text_size">20dp</dimen>
+    <dimen name="sliding_menu_text_size_little">15dp</dimen>
+    <dimen name="sliding_menu_item_padding">10dp</dimen>
+    <dimen name="sliding_menu_list_driver">1px</dimen>
+    
+    <!-- fragment map -->
+    <dimen name="fragment_map_control_img_width">40dp</dimen>
+    <dimen name="fragment_map_control_img_margin">10dp</dimen>
+    <dimen name="fragment_map_notf_height">40dp</dimen>
+    <dimen name="fragment_map_notf_img_width">13dp</dimen>
+    <dimen name="fragment_map_notf_img_height">15dp</dimen>
+    <dimen name="fragment_map_notf_img_margin_left">20dp</dimen>
+    <dimen name="fragment_map_notf_text_padding_left">5dp</dimen>
+    <dimen name="fragment_map_notf_right_space_width">20dp</dimen>
+    <dimen name="fragment_map_notf_right_space_height">1dp</dimen>
+    <dimen name="fragment_map_notf_right_space_margin_right">20dp</dimen>
+    <dimen name="fragment_map_wheel_text_size">15dp</dimen>
+    
+    <!-- fragment mine -->
+    <dimen name="fragment_mine_tab_width">140dp</dimen>
+    <dimen name="fragment_mine_tab_height">30dp</dimen>
+    <dimen name="fragment_mine_tab_add_size">40dp</dimen>
+    
+    
+    <!-- popup window -->
+    <dimen name="popup_window_width">100dp</dimen>
+    <dimen name="popup_window_height">100dp</dimen>
+    
+    <!-- tab button -->
+    <dimen name="tab_btn_lay_padding_top">0dp</dimen>
+    <dimen name="tab_btn_lay_padding_bottom">10dp</dimen>
+    <dimen name="tab_btn_img_width">25dp</dimen>
+    <dimen name="tab_btn_img_height">25dp</dimen>
+    <dimen name="tab_btn_img_margin_top">10dp</dimen>
+    <dimen name="tab_btn_hint_width">12dp</dimen>
+    <dimen name="tab_btn_hint_height">12dp</dimen>
+    <dimen name="tab_btn_hint_margin_left">-5dp</dimen>
+    <dimen name="tab_btn_hint_margin_top">5dp</dimen>
+    <dimen name="tab_btn_hint_size">6dp</dimen>
+    
+    <!-- nav title -->
+    <dimen name="nav_title_height">56dp</dimen>
+    <dimen name="nav_title_img_width">30dp</dimen>
+    <dimen name="nav_title_img_height">30dp</dimen>
+    <dimen name="nav_title_padding_left">20dp</dimen>
+    <dimen name="nav_title_padding_right">20dp</dimen>
+    
+    <!-- alert dialog -->
+    <dimen name="alert_dialog_width">200dp</dimen>
+    <dimen name="alert_dialog_text_padding">20dp</dimen>
+    <dimen name="alert_dialog_text_size">16dp</dimen>
+    <dimen name="alert_dialog_btn_lay_padding">10dp</dimen>
+    <dimen name="alert_dialog_btn_padding">6dp</dimen>
+    <dimen name="alert_dialog_btn_margin_left">20dp</dimen>
+
+    <!-- baidu map  -->
+    <dimen name="fragment_baidu_map_poi_detail_name_size">20dp</dimen>
+    <dimen name="fragment_baidu_map_poi_detail_name_padding">10dp</dimen>
+    <dimen name="fragment_baidu_map_poi_detail_btn_height">40dp</dimen>
+    
+    <!-- mine  -->
+    <dimen name="fragment_mine_talk_item_padding">15dp</dimen>
+    <dimen name="fragment_mine_talk_item_head">50dp</dimen>
+    <dimen name="fragment_mine_talk_item_height">65dp</dimen>
+    <dimen name="fragment_mine_talk_item_nickname">20dp</dimen>
+    <dimen name="fragment_mine_talk_item_msg">15dp</dimen>
+    
+    <!-- Compass x y -->
+    <dimen name="fragment_rtmap_compass_x">5dp</dimen>
+    <dimen name="fragment_rtmap_compass_y">70dp</dimen>
+    
+    <!-- setting item height -->
+    <dimen name="fragment_setting_item_height">50dp</dimen>
+</resources>

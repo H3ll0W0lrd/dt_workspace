@@ -1,0 +1,959 @@
+com.google.gson.DefaultDateTypeAdapter
+com.google.gson.FieldAttributes:
+    53:53:public java.lang.Class getDeclaringClass()
+    60:60:public java.lang.String getName()
+    80:80:public java.lang.reflect.Type getDeclaredType()
+    100:100:public java.lang.Class getDeclaredClass()
+    111:111:public java.lang.annotation.Annotation getAnnotation(java.lang.Class)
+    121:121:public java.util.Collection getAnnotations()
+    135:135:public boolean hasModifier(int)
+    146:146:java.lang.Object get(java.lang.Object)
+    155:155:boolean isSynthetic()
+com.google.gson.Gson:
+    static final boolean DEFAULT_JSON_NON_EXECUTABLE
+    private static final java.lang.String JSON_NON_EXECUTABLE_PREFIX
+    462:465:public com.google.gson.JsonElement toJsonTree(java.lang.Object)
+    485:487:public com.google.gson.JsonElement toJsonTree(java.lang.Object,java.lang.reflect.Type)
+    546:551:public void toJson(java.lang.Object,java.lang.Appendable)
+    740:743:public java.lang.Object fromJson(java.io.Reader,java.lang.Class)
+    841:842:public java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.Class)
+    865:868:public java.lang.Object fromJson(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.Gson$1:
+    126:126:public java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.Gson$2:
+    132:132:public com.google.gson.JsonElement serialize(java.lang.Object)
+    135:135:public com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type)
+com.google.gson.GsonBuilder
+com.google.gson.JsonArray:
+    45:49:com.google.gson.JsonArray deepCopy()
+    70:71:public void addAll(com.google.gson.JsonArray)
+    79:79:public int size()
+    101:101:public com.google.gson.JsonElement get(int)
+    163:166:public java.math.BigDecimal getAsBigDecimal()
+    180:183:public java.math.BigInteger getAsBigInteger()
+    196:199:public float getAsFloat()
+    236:239:public byte getAsByte()
+    244:247:public char getAsCharacter()
+    260:263:public short getAsShort()
+    33:33:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonDeserializationContext:
+    public abstract java.lang.Object deserialize(com.google.gson.JsonElement,java.lang.reflect.Type)
+com.google.gson.JsonDeserializer
+com.google.gson.JsonElement:
+    abstract com.google.gson.JsonElement deepCopy()
+    136:139:public com.google.gson.JsonNull getAsJsonNull()
+    217:217:public float getAsFloat()
+    257:257:public byte getAsByte()
+    271:271:public char getAsCharacter()
+    285:285:public java.math.BigDecimal getAsBigDecimal()
+    299:299:public java.math.BigInteger getAsBigInteger()
+    312:312:public short getAsShort()
+com.google.gson.JsonIOException:
+    private static final long serialVersionUID
+    33:34:public JsonIOException(java.lang.String,java.lang.Throwable)
+com.google.gson.JsonNull:
+    45:45:com.google.gson.JsonNull deepCopy()
+    26:26:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonObject:
+    38:42:com.google.gson.JsonObject deepCopy()
+    68:68:public com.google.gson.JsonElement remove(java.lang.String)
+    79:80:public void addProperty(java.lang.String,java.lang.String)
+    90:91:public void addProperty(java.lang.String,java.lang.Number)
+    101:102:public void addProperty(java.lang.String,java.lang.Boolean)
+    112:113:public void addProperty(java.lang.String,java.lang.Character)
+    122:122:private com.google.gson.JsonElement createJsonElement(java.lang.Object)
+    142:142:public boolean has(java.lang.String)
+    152:152:public com.google.gson.JsonElement get(java.lang.String)
+    162:162:public com.google.gson.JsonPrimitive getAsJsonPrimitive(java.lang.String)
+    172:172:public com.google.gson.JsonArray getAsJsonArray(java.lang.String)
+    182:182:public com.google.gson.JsonObject getAsJsonObject(java.lang.String)
+    32:32:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonParseException:
+    static final long serialVersionUID
+com.google.gson.JsonParser
+com.google.gson.JsonPrimitive:
+    74:76:public JsonPrimitive(java.lang.Character)
+    84:86:JsonPrimitive(java.lang.Object)
+    90:90:com.google.gson.JsonPrimitive deepCopy()
+    204:204:public java.math.BigDecimal getAsBigDecimal()
+    215:215:public java.math.BigInteger getAsBigInteger()
+    227:227:public float getAsFloat()
+    249:249:public short getAsShort()
+    265:265:public byte getAsByte()
+    270:270:public char getAsCharacter()
+    33:33:bridge synthetic com.google.gson.JsonElement deepCopy()
+com.google.gson.JsonSerializationContext:
+    public abstract com.google.gson.JsonElement serialize(java.lang.Object)
+    public abstract com.google.gson.JsonElement serialize(java.lang.Object,java.lang.reflect.Type)
+com.google.gson.JsonSerializer
+com.google.gson.JsonStreamParser
+com.google.gson.JsonSyntaxException:
+    private static final long serialVersionUID
+com.google.gson.LongSerializationPolicy:
+    public abstract com.google.gson.JsonElement serialize(java.lang.Long)
+com.google.gson.LongSerializationPolicy$1:
+    36:36:public com.google.gson.JsonElement serialize(java.lang.Long)
+com.google.gson.LongSerializationPolicy$2:
+    47:47:public com.google.gson.JsonElement serialize(java.lang.Long)
+com.google.gson.TreeTypeAdapter
+com.google.gson.TreeTypeAdapter$1
+com.google.gson.TreeTypeAdapter$SingleTypeFactory
+com.google.gson.TypeAdapter:
+    141:143:public final void toJson(java.io.Writer,java.lang.Object)
+    186:186:public final com.google.gson.TypeAdapter nullSafe()
+    215:217:public final java.lang.String toJson(java.lang.Object)
+    255:256:public final java.lang.Object fromJson(java.io.Reader)
+    269:269:public final java.lang.Object fromJson(java.lang.String)
+    280:283:public final java.lang.Object fromJsonTree(com.google.gson.JsonElement)
+com.google.gson.TypeAdapter$1
+com.google.gson.internal.$Gson$Preconditions:
+    32:32:public $Gson$Preconditions()
+com.google.gson.internal.$Gson$Types:
+    45:45:private $Gson$Types()
+com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.internal.$Gson$Types$WildcardTypeImpl:
+    private static final long serialVersionUID
+com.google.gson.internal.Excluder:
+    private static final double IGNORE_VERSIONS
+    70:72:public com.google.gson.internal.Excluder withVersion(double)
+    76:81:public varargs com.google.gson.internal.Excluder withModifiers(int[])
+    85:87:public com.google.gson.internal.Excluder disableInnerClassSerialization()
+    91:93:public com.google.gson.internal.Excluder excludeFieldsWithoutExposeAnnotation()
+    98:108:public com.google.gson.internal.Excluder withExclusionStrategy(com.google.gson.ExclusionStrategy,boolean,boolean)
+com.google.gson.internal.LazilyParsedNumber:
+    76:76:private java.lang.Object writeReplace()
+com.google.gson.internal.LinkedTreeMap:
+    625:625:private java.lang.Object writeReplace()
+com.google.gson.internal.Primitives:
+    32:32:private Primitives()
+    80:80:public static boolean isWrapperType(java.lang.reflect.Type)
+    113:115:public static java.lang.Class unwrap(java.lang.Class)
+com.google.gson.internal.Streams:
+    35:79:public Streams()
+    40:60:public static com.google.gson.JsonElement parse(com.google.gson.stream.JsonReader)
+com.google.gson.internal.bind.JsonTreeReader:
+    53:55:public JsonTreeReader(com.google.gson.JsonElement)
+com.google.gson.internal.bind.JsonTreeWriter:
+    163:167:public com.google.gson.stream.JsonWriter value(double)
+com.google.gson.internal.bind.TypeAdapters:
+    58:58:private TypeAdapters()
+    769:769:public static com.google.gson.TypeAdapterFactory newFactory(com.google.gson.reflect.TypeToken,com.google.gson.TypeAdapter)
+com.google.gson.internal.bind.TypeAdapters$23:
+    private static final java.lang.String YEAR
+    private static final java.lang.String MONTH
+    private static final java.lang.String DAY_OF_MONTH
+    private static final java.lang.String HOUR_OF_DAY
+    private static final java.lang.String MINUTE
+    private static final java.lang.String SECOND
+com.google.gson.internal.bind.TypeAdapters$27
+com.google.gson.reflect.TypeToken:
+    112:112:public boolean isAssignableFrom(java.lang.Class)
+    123:140:public boolean isAssignableFrom(java.lang.reflect.Type)
+    153:153:public boolean isAssignableFrom(com.google.gson.reflect.TypeToken)
+    161:178:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.GenericArrayType)
+    188:231:private static boolean isAssignableFrom(java.lang.reflect.Type,java.lang.reflect.ParameterizedType,java.util.Map)
+    240:250:private static boolean typeEquals(java.lang.reflect.ParameterizedType,java.lang.reflect.ParameterizedType,java.util.Map)
+    257:265:private static varargs java.lang.AssertionError buildUnexpectedTypeError(java.lang.reflect.Type,java.lang.Class[])
+    273:273:private static boolean matches(java.lang.reflect.Type,java.lang.reflect.Type,java.util.Map)
+com.google.gson.stream.JsonReader:
+    private static final long MIN_INCOMPLETE_INTEGER
+    private static final int PEEKED_NONE
+    private static final int PEEKED_BEGIN_OBJECT
+    private static final int PEEKED_END_OBJECT
+    private static final int PEEKED_BEGIN_ARRAY
+    private static final int PEEKED_END_ARRAY
+    private static final int PEEKED_TRUE
+    private static final int PEEKED_FALSE
+    private static final int PEEKED_NULL
+    private static final int PEEKED_SINGLE_QUOTED
+    private static final int PEEKED_DOUBLE_QUOTED
+    private static final int PEEKED_UNQUOTED
+    private static final int PEEKED_BUFFERED
+    private static final int PEEKED_SINGLE_QUOTED_NAME
+    private static final int PEEKED_DOUBLE_QUOTED_NAME
+    private static final int PEEKED_UNQUOTED_NAME
+    private static final int PEEKED_LONG
+    private static final int PEEKED_NUMBER
+    private static final int PEEKED_EOF
+    private static final int NUMBER_CHAR_NONE
+    private static final int NUMBER_CHAR_SIGN
+    private static final int NUMBER_CHAR_DIGIT
+    private static final int NUMBER_CHAR_DECIMAL
+    private static final int NUMBER_CHAR_FRACTION_DIGIT
+    private static final int NUMBER_CHAR_EXP_E
+    private static final int NUMBER_CHAR_EXP_SIGN
+    private static final int NUMBER_CHAR_EXP_DIGIT
+com.google.gson.stream.JsonScope
+com.google.gson.stream.JsonWriter:
+    462:468:public com.google.gson.stream.JsonWriter value(double)
+com.google.gson.stream.MalformedJsonException:
+    private static final long serialVersionUID
+    33:37:public MalformedJsonException(java.lang.String,java.lang.Throwable)
+    39:43:public MalformedJsonException(java.lang.Throwable)
+com.rtm.frm.data.AbstractPOI:
+    protected java.lang.String mtitle
+    27:28:public void setMstyle(int)
+    40:42:public void setName(java.lang.String)
+    45:45:public java.lang.String getSubName()
+    75:76:public void setX(float)
+    83:83:public float getY()
+    86:87:public void setY(float)
+com.rtm.frm.data.BuildInfo
+com.rtm.frm.data.Catalog
+com.rtm.frm.data.CheckinCounter:
+    37:37:public java.lang.String getImage()
+    40:41:public void setImage(java.lang.String)
+    44:44:public java.lang.String getTerminal()
+    47:48:public void setTerminal(java.lang.String)
+    51:51:public java.lang.String getShortTerminal()
+    54:55:public void setShortTerminal(java.lang.String)
+    58:58:public java.lang.String getInternational()
+    61:62:public void setInternational(java.lang.String)
+    65:65:public java.lang.String getCheckInCounter()
+    68:69:public void setCheckInCounter(java.lang.String)
+com.rtm.frm.data.DownloadMessage:
+    15:15:public java.lang.String getFloorId()
+    18:19:public void setFloorId(java.lang.String)
+    21:21:public java.lang.String getBuildId()
+    24:25:public void setBuildId(java.lang.String)
+    27:27:public int getProgress()
+    30:31:public void setProgress(int)
+com.rtm.frm.data.Floor:
+    private static final long serialVersionUID
+    private static final java.lang.String KEY_FLOOR
+    private static final java.lang.String KEY_DESCRIPTION
+    public static final java.lang.String FLOOR_ALL
+    24:26:public Floor(java.lang.String)
+    35:36:public void setFloor(java.lang.String)
+    39:39:public java.lang.String getFloor()
+    43:44:public void setDescription(java.lang.String)
+    47:47:public java.lang.String getDescription()
+com.rtm.frm.data.FloorInfo
+com.rtm.frm.data.Friend
+com.rtm.frm.data.Line
+com.rtm.frm.data.Location:
+    private static final long serialVersionUID
+    31:36:public Location(float,float,int)
+    38:43:public Location(float,float,java.lang.String,java.lang.String)
+    62:62:public int getRotate(com.rtm.frm.data.Location)
+    66:68:public void setFloor(java.lang.String)
+    88:88:public boolean isEmpty()
+com.rtm.frm.data.NavigatePoint:
+    public static final int TYPE_KEY_POIS
+    private java.lang.String mMessageTurn
+    private float mDistance
+    88:89:public void setType(int)
+    92:92:public int getType()
+    100:101:public void setId(java.lang.String)
+    104:104:public java.lang.String getFloor()
+    112:114:public void setFloor(java.lang.String)
+    121:122:public void setX(float)
+    125:125:public float getY_abs()
+    133:134:public void setY(float)
+    137:173:public java.lang.String getName(java.lang.String)
+    177:177:public java.lang.String gettrueName()
+    181:182:public void setName(java.lang.String)
+    185:185:public java.lang.String getDestFloor()
+    189:192:public java.lang.String getFloorString(java.lang.String)
+    196:197:public void setStep(int)
+    200:200:public int getStep()
+    210:210:public float getDistance()
+    214:215:public void setDistance(float)
+    218:218:public java.lang.String getMessageTurn()
+    222:223:public void setMessageTurn(java.lang.String)
+com.rtm.frm.data.POI:
+    private java.lang.String mWDID
+    private java.lang.String mPic
+    private java.lang.String mBigPhoto
+    private java.lang.String mOpenTime
+    private java.lang.String mCurrency
+    private java.lang.String mAverage
+    private java.lang.String mRecommend
+    private boolean mDone
+    private java.lang.String mRecommendTitle
+    private java.lang.String mRecommendPic
+    private int mRecommendType
+    private java.lang.String mRecommendData
+    67:71:public POI(int,java.lang.String)
+    81:88:public POI(int,float,float,java.lang.String,java.lang.String)
+    108:113:public POI(float,float,java.lang.String)
+    115:127:public POI(com.rtm.frm.data.POI)
+    129:139:public POI(int,java.lang.String,java.lang.String,java.lang.String,float,float)
+    197:197:public java.lang.String getBuildId()
+    204:204:public java.lang.String getPhone()
+    208:209:public void setPhone(java.lang.String)
+    212:212:public java.lang.String getPhoto()
+    216:217:public void setPhoto(java.lang.String)
+    220:220:public java.lang.String getAddress()
+    224:225:public void setAddress(java.lang.String)
+    228:228:public java.lang.String getIntro()
+    232:233:public void setIntro(java.lang.String)
+    236:236:public java.lang.String getBigPhoto()
+    240:241:public void setBigPhoto(java.lang.String)
+    244:244:public java.lang.String getOpenTime()
+    248:248:public java.lang.String getCurrency()
+    252:252:public java.lang.String getAverage()
+    256:256:public java.lang.String getRecommend()
+    260:261:public void setOpenTime(java.lang.String)
+    264:265:public void setCurrency(java.lang.String)
+    268:269:public void setAverage(java.lang.String)
+    272:273:public void setRecommend(java.lang.String)
+    276:277:public void setZoneCode(java.lang.String)
+    280:280:public java.lang.String getZoneCode()
+    284:285:public void setZoneName(java.lang.String)
+    288:288:public java.lang.String getZoneName()
+    292:292:public boolean isDone()
+    296:297:public void setDone(boolean)
+    300:300:public java.lang.String getRecommendTitle()
+    304:305:public void setRecommendTitle(java.lang.String)
+    308:308:public java.lang.String getRecommendPic()
+    312:313:public void setRecommendPic(java.lang.String)
+    316:316:public int getRecommendType()
+    320:321:public void setRecommendType(int)
+    324:324:public java.lang.String getRecommendData()
+    328:329:public void setRecommendData(java.lang.String)
+    332:332:public java.lang.String getWDID()
+    336:337:public void setWDID(java.lang.String)
+    340:340:public java.lang.String getPic()
+    344:345:public void setPic(java.lang.String)
+com.rtm.frm.drawmap.AnimateDraggingMapThread:
+    private static final float DRAGGING_ANIMATION_TIME
+    private static final int DEFAULT_SLEEP_TO_REDRAW
+    60:60:public boolean isAnimating()
+    64:65:private void clearTargetValues()
+    68:68:public int getTargetZoom()
+    72:72:public double getTargetLatitude()
+    76:76:public double getTargetLongitude()
+    80:113:public void startMoving(float,float)
+    119:155:public void startDragging(float,float,float,float,float,float)
+    158:173:public void startThreadAnimating(java.lang.Runnable)
+    177:184:public void stopAnimatingSync()
+    36:36:static synthetic boolean access$0(com.rtm.frm.drawmap.AnimateDraggingMapThread)
+    38:38:static synthetic com.rtm.frm.map.MapView access$1(com.rtm.frm.drawmap.AnimateDraggingMapThread)
+    36:36:static synthetic void access$2(com.rtm.frm.drawmap.AnimateDraggingMapThread,boolean)
+    37:37:static synthetic void access$3(com.rtm.frm.drawmap.AnimateDraggingMapThread,java.lang.Thread)
+com.rtm.frm.drawmap.AnimateDraggingMapThread$1
+com.rtm.frm.drawmap.AnimateDraggingMapThread$2
+com.rtm.frm.drawmap.AnimateDraggingMapThread$3
+com.rtm.frm.drawmap.DrawMap:
+    124:124:public int getX(int,int)
+    128:128:public int getY(int,int)
+    319:329:public void drawLabels(android.graphics.Canvas,android.content.Context,boolean,android.graphics.Rect)
+    611:611:public com.rtm.frm.vmap.Edge[] getmEdges()
+com.rtm.frm.drawmap.DrawStyle:
+    17:18:public void setColorfill(int)
+    23:24:public void setColorborder(int)
+    29:30:public void setWidthborder(float)
+com.rtm.frm.filedown.DownImap:
+    10:10:public DownImap()
+com.rtm.frm.filedown.DownUtil:
+    public static final int FAIL
+    public static int fileSize2
+    public static int downLoadSize
+    26:26:public DownUtil()
+com.rtm.frm.filedown.UpdateImap:
+    96:97:public static long getCreateTime(java.lang.String)
+com.rtm.frm.map.CompassLayer:
+    private static final int TAP_BOUND
+    25:26:public void setDrawX(int)
+    29:30:public void setDrawY(int)
+    39:42:public CompassLayer(com.rtm.frm.map.MapView,android.graphics.Bitmap)
+    147:147:public int getmPosition()
+    151:152:public void setmPosition(int)
+com.rtm.frm.map.CouponLayer:
+    42:44:public CouponLayer(com.rtm.frm.map.MapView)
+    47:65:public void setCoupons(java.util.ArrayList)
+    68:68:public java.util.ArrayList getCoupons()
+    160:161:public void setOnCouponSelectedListener(com.rtm.frm.map.CouponLayer$OnCouponSelectedListener)
+    178:187:private void calculatetapRect(com.rtm.frm.data.AbstractPOI,android.graphics.Rect)
+    316:316:public com.rtm.frm.data.AbstractPOI getCoupon()
+com.rtm.frm.map.FriendLocation
+com.rtm.frm.map.FriendLocationLayer
+com.rtm.frm.map.FriendLocationLayer$OnFriendMenuSelectedListener
+com.rtm.frm.map.FriendLocationLayer$OnFriendNavigateSelectedListener
+com.rtm.frm.map.LocationLayer:
+    private static final int TIME_POPUP
+    public boolean mispark
+    private static final int TAP_BOUND
+    private static final int MESSAGE_HIDE_POPUP
+    private android.widget.ImageView locationView
+    private int mLightnum
+    private android.graphics.drawable.NinePatchDrawable mPopupDrawable
+    private android.os.Handler mHandler
+    74:76:public LocationLayer(com.rtm.frm.map.MapView,com.rtm.frm.data.Location)
+    78:80:public LocationLayer(com.rtm.frm.map.MapView)
+    82:86:public LocationLayer(com.rtm.frm.map.MapView,android.graphics.Bitmap,android.graphics.Bitmap)
+    88:96:public void setShowPopup()
+    99:99:public boolean getHaveShownPopup()
+    104:114:public void setLocation(com.rtm.frm.data.Location)
+    242:254:private void calculatePopupRect(android.graphics.Rect)
+    257:265:private void calculateTextBound(android.graphics.Rect,com.rtm.frm.data.Point)
+    342:342:public int getRadius()
+    346:347:public void setRadius(int)
+    350:351:public void setColorLocationCircle(int)
+    354:355:public void setColorLocationOutline(int)
+    358:359:public void setLocationOutlineWidth(float)
+    53:53:static synthetic void access$0(com.rtm.frm.map.LocationLayer,boolean)
+    46:46:static synthetic com.rtm.frm.map.MapView access$1(com.rtm.frm.map.LocationLayer)
+com.rtm.frm.map.LocationLayer$1
+com.rtm.frm.map.MapConfig:
+    public static final int DPI
+    private com.rtm.frm.map.MapConfig$OnFloorChangedListener mOnFloorChangedListener
+    41:42:public void setmPreFloor(java.lang.String)
+    60:61:public void setOnMapChangedListener(com.rtm.frm.map.MapConfig$OnMapChangedListener)
+    63:64:public void setOnFloorChangedListener(com.rtm.frm.map.MapConfig$OnFloorChangedListener)
+    73:74:public void setCurrentLocation(com.rtm.frm.data.Location)
+    125:125:public float getScaleOfPxByScale(int)
+    130:131:public void setNewMap(boolean)
+com.rtm.frm.map.MapConfig$OnFloorChangedListener
+com.rtm.frm.map.MapView:
+    private int alpha
+    private static final int MAP_PADDING
+    private com.rtm.frm.data.Location Lastlocation
+    private float subX
+    private float subY
+    private java.lang.String Floortemp
+    165:178:public void StartSensor()
+    181:187:public void removeSensor()
+    259:259:public boolean isStopmove()
+    265:266:public void setStopmove(boolean)
+    269:270:public void setViewdx(int)
+    273:274:public void setViewdy(int)
+    317:318:public void setMapAngle(float)
+    331:331:public boolean ismInRotateMode()
+    335:336:public void setmInRotateMode(boolean)
+    367:367:public boolean isMenuvisible()
+    371:372:public void setMenuvisible(boolean)
+    375:376:public void setDefaultScaleZoom(float)
+    668:668:public boolean hasData()
+    719:724:public void refreshMapbydirty(android.graphics.Rect)
+    774:778:public void dragToAnimate(float,float,float,float)
+    879:880:public void setOnClickListener(com.rtm.frm.map.MapView$OnTapListener)
+    883:883:public void setOnZoomChangedListener(com.rtm.frm.map.MapView$OnZoomChangedListener)
+    886:887:public void setOnMapModeChangedListener(com.rtm.frm.map.MapView$OnMapModeChangedListener)
+    890:891:public void removeOnMapModeChangedListener()
+    1136:1137:public void eraseMapLayer()
+    1144:1148:public void setMyCurrentLocation(com.rtm.frm.data.Location,boolean,int)
+    1151:1229:public void setMyCurrentLocation(com.rtm.frm.data.Location,boolean)
+    1232:1252:public com.rtm.frm.data.Location locationByRoad(com.rtm.frm.data.Location)
+    1284:1284:public com.rtm.frm.map.ParkLayer getParkLayer()
+    1292:1293:public void setLogoPosition(int)
+    1296:1320:private void couponpash(com.rtm.frm.data.Location)
+    1340:1341:public void setmTapable(boolean)
+    1344:1344:public boolean isDoubleTapable()
+    1348:1349:public void setDoubleTapable(boolean)
+    1352:1352:public boolean isRoamable()
+    1356:1357:public void setRoamable(boolean)
+    1360:1360:public boolean isRotateable()
+    1364:1365:public void setRotateable(boolean)
+    1368:1368:public boolean isZoomable()
+    1372:1373:public void setZoomable(boolean)
+    1380:1380:public int getMapCacheSize()
+    1469:1489:public com.rtm.frm.data.POI getNestestPoi(float,float)
+    1494:1495:public void setScaleMax(int)
+    1559:1566:public void changeTapPOIViewSize(int,int)
+    1568:1569:public void setMapSkewAngle(float)
+    1573:1616:public void getLogoMap()
+    1619:1624:public boolean isinLogoMap(java.lang.String)
+    1631:1668:public static java.lang.String toPinYin(java.lang.String)
+    1671:1684:public boolean isInMapBound(float,float)
+com.rtm.frm.map.MapView$OnZoomChangedListener
+com.rtm.frm.map.MultiTouchSupport:
+    51:51:public boolean isInZoomMode()
+com.rtm.frm.map.POILayer
+com.rtm.frm.map.POILayer$OnPOIDrawListener
+com.rtm.frm.map.ParkLayer:
+    private com.rtm.frm.map.ParkLayer$OnSetParkListener mOnSetParkListener
+    25:27:public ParkLayer(com.rtm.frm.map.MapView)
+    30:37:public void setPOI(com.rtm.frm.data.AbstractPOI)
+    40:40:public com.rtm.frm.data.AbstractPOI getPOI()
+    157:158:public void setOnSetParkListener(com.rtm.frm.map.ParkLayer$OnSetParkListener)
+com.rtm.frm.map.ParkLayer$OnSetParkListener
+com.rtm.frm.map.RouteLayer
+com.rtm.frm.map.RouteLayer$1
+com.rtm.frm.map.RouteLayer$OnFloorChangedListener
+com.rtm.frm.map.RouteLayer$OnIsEndListener
+com.rtm.frm.map.RouteLayer$OnPopupPositionChangedListener
+com.rtm.frm.map.TapPOILayer:
+    private int id
+    private final int icon_width
+    private android.view.View mView
+    68:68:public void setMapMode(boolean)
+    70:72:public TapPOILayer(com.rtm.frm.map.MapView)
+    111:121:public void setCoupon(com.rtm.frm.data.AbstractPOI)
+    128:129:public void setOnPOITappedListener(com.rtm.frm.map.TapPOILayer$OnPOITappedListener)
+    132:133:public void setOnPOISelectedListener(com.rtm.frm.map.TapPOILayer$OnPOISelectedListener)
+    136:136:public void setOnPOIMenuSelectedListener(com.rtm.frm.map.TapPOILayer$OnPOIMenuSelectedListener)
+    140:140:public void setOnPOINavigateSelectedListener(com.rtm.frm.map.TapPOILayer$OnPOINavigateSelectedListener)
+    143:144:public void setOnTapPOIDrawListener(com.rtm.frm.map.TapPOILayer$OnTapPOIDrawListener)
+    147:148:public void removeOnPOISelectedListener()
+    151:152:public void setDisableTap(boolean)
+    155:155:public boolean isDisableTap()
+    295:299:private void calculateMenuRect(com.rtm.frm.data.AbstractPOI,android.graphics.Rect,android.graphics.Rect)
+    302:307:private void calculateNavigateRect(com.rtm.frm.data.AbstractPOI,android.graphics.Rect,android.graphics.Rect)
+    329:342:private void calculateTextBound(com.rtm.frm.data.AbstractPOI,android.graphics.Rect,com.rtm.frm.data.Point)
+    671:671:public int getmTapState()
+    679:679:public boolean ismDrawPopup()
+    683:684:public void setmDrawPopup(boolean)
+com.rtm.frm.map.TapPOILayer$OnPOIMenuSelectedListener
+com.rtm.frm.map.TapPOILayer$OnPOINavigateSelectedListener
+com.rtm.frm.map.Version
+com.rtm.frm.map.XunluMap:
+    private android.graphics.Bitmap mDefaultTile
+    private android.graphics.Bitmap mEmptyTile
+    56:57:public void setDefaultTile(int)
+    60:61:public void setEmptyTile(int)
+    64:64:public android.graphics.Bitmap getDefaultTile()
+    68:68:public android.graphics.Bitmap getEmptyTile()
+    78:78:public static java.lang.String getUrlRelease()
+com.rtm.frm.map.XunluMapApp:
+    21:24:public java.lang.String getDeviceId()
+    28:28:public java.lang.String getPakagename()
+com.rtm.frm.model.CatalogModel
+com.rtm.frm.model.ErrorModel
+com.rtm.frm.model.FloorModel
+com.rtm.frm.model.LicenseModel
+com.rtm.frm.model.NavigateModel
+com.rtm.frm.model.POIModel
+com.rtm.frm.model.SuggestModel
+com.rtm.frm.network.ErrorData:
+    java.lang.String mErrorMessage
+    16:16:public java.lang.String getErrorMessage()
+com.rtm.frm.network.Network:
+    14:16:public Network(android.content.Context)
+    23:27:public Network(android.content.Context,java.lang.String)
+    29:34:public Network(android.content.Context,java.lang.String,java.util.ArrayList)
+    41:42:public void setUrl(java.lang.String)
+    53:53:public byte[] getNetData()
+    57:57:public boolean downloadFile(java.lang.String,android.os.Handler)
+    61:61:public boolean isNetSuccess()
+    65:68:public void cancelNetConnect()
+    71:72:public void addPostData(org.apache.http.message.BasicNameValuePair)
+    75:76:public void addPostData(java.lang.String,byte[])
+    83:83:public int getErrorCode()
+    87:87:public int getNetErrorCode()
+    91:91:public boolean isFileSegSuccess()
+    95:96:public java.lang.String getErrorMsg()
+com.rtm.frm.network.NetworkCore:
+    public static final java.lang.String NET_TYPE_NET
+    public static final java.lang.String NET_TYPE_WAP
+    public static final java.lang.String NET_TYPE_WIFI
+    private static final java.lang.String END
+    private static final java.lang.String HYPENS
+    private static final java.lang.String BOUNDARY
+    private static final int BUFFERSIZE
+    private static final int MAX_RETRY_COUNT
+    private static final int CONNECTTIMEOUT
+    private static final int GETDATATIMEOUT
+    private static final int POSTDATATIMEOUT
+    98:117:public java.lang.String getNetType()
+    145:161:public static void initNetWorkCore()
+    179:183:public NetworkCore(java.lang.String)
+    190:194:public NetworkCore(android.content.Context,java.lang.String)
+    201:202:public void setRequestGzip(java.lang.Boolean)
+    209:209:public java.lang.Boolean getRequestGzip()
+    253:253:public java.lang.String getUrl()
+    261:264:public boolean isRequestSuccess()
+    269:272:public boolean isNetSuccess()
+    277:277:public int getErrorCode()
+    281:281:public int getNetErrorCode()
+    285:286:public void setErrorCode(int)
+    292:300:public void cancelNetConnect()
+    703:859:public java.lang.String postMultiNetData()
+    864:867:public boolean isFileSegSuccess()
+    877:1005:public java.lang.Boolean downloadFile(java.lang.String,android.os.Handler)
+    1014:1015:public void setContext(android.content.Context)
+    1022:1022:public android.content.Context getContext()
+    1030:1030:public java.util.ArrayList getPostData()
+    1052:1054:public void addPostData(java.lang.String,java.lang.String)
+    1062:1066:public void addPostData(java.lang.String,byte[])
+    1083:1084:public void setIsBDImage(boolean)
+    1087:1087:public boolean getIsBDImage()
+com.rtm.frm.network.NetworkCore$1
+com.rtm.frm.network.NetworkErrorCode
+com.rtm.frm.network.NetworkService:
+    private static final java.lang.String KEY_DEVICE_ID
+    private static final java.lang.String KEY_IMEI
+    private static final java.lang.String KEY_DEVICE_MAC
+    private static final java.lang.String KEY_PHONE_TEL
+    private static final java.lang.String KEY_PHONE_OPERATOR_NAME
+    private static final java.lang.String KEY_PACK_NAME
+    private static final java.lang.String KEY_PHONE_RELEASE
+    private static final java.lang.String KEY_PHONE_MODEL
+    private static final java.lang.String KEY_VERSION
+    private static final java.lang.String KEY_SOURCE_SITE
+    private static final java.lang.String KEY_COUPON_ID
+    private static final java.lang.String KEY_POI_ID
+    private static final java.lang.String KEY_BUILD_ID
+    private static final java.lang.String KEY_FLOOR
+    private static final java.lang.String KEY_COORDINATE_X
+    private static final java.lang.String KEY_COORDINATE_Y
+    private static final java.lang.String KEY_X
+    private static final java.lang.String KEY_Y
+    private static final java.lang.String KEY_LATITUDE
+    private static final java.lang.String KEY_LONGITUDE
+    private static final java.lang.String KEY_RADIUS
+    private static final java.lang.String KEY_SELECTED_BUILD_ID
+    private static final java.lang.String KEY_KEYWORDS
+    private static final java.lang.String KEY_ROOT_CATALOG
+    private static final java.lang.String KEY_SUB_CATALOG
+    private static final java.lang.String KEY_POI_CLASS
+    private static final java.lang.String KEY_ID_POI_CLASS
+    private static final java.lang.String KEY_FEEDBACK
+    private static final java.lang.String KEY_NAVIGATE_START_FLOOR
+    private static final java.lang.String KEY_NAVIGATE_START_X
+    private static final java.lang.String KEY_NAVIGATE_START_Y
+    private static final java.lang.String KEY_NAVIGATE_END_FLOOR
+    private static final java.lang.String KEY_NAVIGATE_END_X
+    private static final java.lang.String KEY_NAVIGATE_END_Y
+    private static final java.lang.String KEY_NAVIGATE_POI_LIST
+    private static final java.lang.String KEY_PACKAGE_NAME
+    private static final java.lang.String KEY_RELEASE
+    private static final java.lang.String KEY_APP_ID
+    private static final java.lang.String KEY_PAGE_NO
+    private static final java.lang.String KEY_PAGE_SIZE
+    private static final java.lang.String KEY_LICENSE_USERID
+    private static final java.lang.String KEY_LICENSE_PAKAGE
+    private static final java.lang.String KEY_LICENSE_KEY
+    private static final java.lang.String KEY_INDOORX
+    private static final java.lang.String KEY_INDOORY
+    19:19:public NetworkService()
+    104:114:public static com.rtm.frm.network.NetworkTask fetchCouponDetail(java.lang.String,java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    121:127:public static com.rtm.frm.network.NetworkTask fetchHot(java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    134:140:public static com.rtm.frm.network.NetworkTask fetchFloors(java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    147:155:public static com.rtm.frm.network.NetworkTask searchKeyword(java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    162:162:public static com.rtm.frm.network.NetworkTask searchCatalogAndFloor(java.lang.String,int,java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    167:190:public static com.rtm.frm.network.NetworkTask searchCatalogAndFloor(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    198:210:public static com.rtm.frm.network.NetworkTask searchCatalog(java.lang.String,java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    218:226:public static com.rtm.frm.network.NetworkTask fetchSuggest(java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    233:241:public static com.rtm.frm.network.NetworkTask fetchCouponsByFloor(java.lang.String,java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    247:251:public static com.rtm.frm.network.NetworkTask fetchRegions(com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    257:263:public static com.rtm.frm.network.NetworkTask commitFeed(java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    269:285:public static com.rtm.frm.network.NetworkTask commitLocation(com.rtm.frm.data.Location,double,double,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    291:295:public static com.rtm.frm.network.NetworkTask fetchCouponClass(com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    300:300:public static com.rtm.frm.network.NetworkTask fetchRoute(java.lang.String,com.rtm.frm.data.AbstractPOI,com.rtm.frm.data.AbstractPOI,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    305:335:public static com.rtm.frm.network.NetworkTask fetchRoute(java.lang.String,com.rtm.frm.data.AbstractPOI,com.rtm.frm.data.AbstractPOI,java.util.ArrayList,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    341:346:public static com.rtm.frm.network.NetworkTask fetchLicenseByPackage(java.lang.String,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    352:356:public static com.rtm.frm.network.NetworkTask fetchBuilds(com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    363:377:public static com.rtm.frm.network.NetworkTask commitUserPosition(java.lang.String,java.lang.String,float,float,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    404:404:public static com.rtm.frm.network.NetworkTask fetcharea(java.lang.String,int,float,float,float,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    409:423:public static com.rtm.frm.network.NetworkTask fetcharea(java.lang.String,java.lang.String,float,float,float,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    429:429:public static com.rtm.frm.network.NetworkTask fetchNearestPoi(java.lang.String,int,float,float,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+    434:447:public static com.rtm.frm.network.NetworkTask fetchNearestPoi(java.lang.String,java.lang.String,float,float,com.rtm.frm.network.NetworkTask$OnNetworkTaskPrepareListener,com.rtm.frm.network.NetworkTask$OnNetworkTaskCompleteListener)
+com.rtm.frm.network.NetworkTask:
+    public static final int TASK_GET
+    public static final int TASK_POST
+    35:35:public int getErrorCode()
+    39:41:public void addParam(java.lang.String,java.lang.String)
+    77:81:public void cancel()
+com.rtm.frm.utils.CnToSpell
+com.rtm.frm.utils.Config:
+    43:43:public java.lang.String getServer()
+    47:48:public void setServer(java.lang.String)
+com.rtm.frm.utils.Constants:
+    public static final int buffer
+    public static final boolean ROTATE
+    public static final boolean LOG
+    public static final java.lang.String URL_CHECK_LICENSE
+    public static final int NET_MSG_GET_LENGTH
+    public static final int UIEVENT_PROGRESS
+    public static final int UIEVENT_ERROR
+    public static final int MAP_REFRESH
+    public static final int MAP_PARTIAL_REFRESH
+    public static final int POI_STYLE_PARK
+    public static final int ERROR_NOExistSdCard
+    public static final int ERROR_FailCheckNet
+    public static final int ERROR_FailCreatDir
+    public static final int ERROR_FailDownLoad
+    public static final int POINTPT
+    public static final double RATIO
+    public static final int ICONWIDTH
+    public static final int TEXTCOLOR
+    public static final float MAP_IC_M
+    public static final float MAP_DPI
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_ID_SHIFT
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_DOWN
+    public static final int ACTION_UP
+    public static final int ACTION_MOVE
+    public static final int COUPON_TUAN
+    public static final int COUPON_CREDIT
+    public static final int COUPON_TICKET
+    public static final java.lang.String title_my_location
+    public static final int LOCATION_ERROR
+    public static final int LOCATION_FLOOR_TIMES
+    public static final java.lang.String URL_PATH
+    public static final java.lang.String WEB_UPDATA
+    public static final java.lang.String CHECK_MD5
+    public static final float POI_DENSITY
+    public static final int DATA_VERSION
+    public static final int MIN_PIXEL
+    public static final int LOCATIONS_TIMES
+    public static final boolean COUPON_PUSH
+    public static final float COUPON_DISTANCE
+    public static final int POPUINDEX_TAP
+    public static final int POPUINDEX_NAVI
+    public static final int POPUINDEX_COUPON
+    public static final int ICON_LOGO
+    public static final java.lang.String DRAW_LOGO
+    public static final int TOP_RIGHT
+    public static final int TOP_LEFT
+    public static final int BOTTOM_RIGHT
+    public static final int BOTTOM_LEFT
+    public static final int COMAPASS_CUSTOM
+    public static final float DEFAULT_SCALE
+    public static final float DISTANCE
+    public static final float density
+    public static final java.lang.String URL_FETCH_COUPONS
+    public static final java.lang.String URL_CHECK_UPDATE
+    public static final java.lang.String URL_COUPON_DETAIL
+    public static final java.lang.String URL_ADDRESS
+    public static final java.lang.String URL_HOT
+    public static final java.lang.String URL_FLOORS
+    public static final java.lang.String URL_SEARCH_KEYWORD
+    public static final java.lang.String URL_SEARCH_CATALOG_AND_FLOOR
+    public static final java.lang.String URL_SUGGEST
+    public static final java.lang.String URL_FEEDBACK
+    public static final java.lang.String URL_FLOOR_COUPON
+    public static final java.lang.String URL_COMMIT_LOCATION
+    public static final java.lang.String URL_COUPON_CLASS
+    public static final java.lang.String URL_NAVIGATE
+    public static final java.lang.String URL_LICENSE
+    public static final java.lang.String URL_BUILD_LIST
+    public static final java.lang.String URL_USER_LOCATION
+    public static final java.lang.String URL_USER_INFO
+    public static final java.lang.String URL_AREA
+    public static final java.lang.String URL_NESTEST
+    public static final java.lang.String URL_REGIONS
+    public static final java.lang.String LONG_DATE_FORMAT
+    public static final float SCALE_INFINITY
+    public static final int TAP_STATE_NORMAL
+    public static final int TAP_STATE_PIN_KEEP
+    public static final int TAP_STATE_POPUP_KEEP
+    12:12:public Constants()
+com.rtm.frm.utils.Constants$1:
+    private static final long serialVersionUID
+com.rtm.frm.utils.Constants$2:
+    private static final long serialVersionUID
+com.rtm.frm.utils.Constants$3:
+    private static final long serialVersionUID
+com.rtm.frm.utils.Constants$4:
+    private static final long serialVersionUID
+com.rtm.frm.utils.FileUtil:
+    6:6:public FileUtil()
+    38:57:public static void deleteFolderFile(java.lang.String,boolean)
+com.rtm.frm.utils.Geometry
+com.rtm.frm.utils.GzipHelper:
+    static final int BUFFERSIZE
+    13:13:public GzipHelper()
+    39:48:public static void compress(java.io.InputStream,java.io.OutputStream)
+com.rtm.frm.utils.Handlerlist:
+    private static final java.lang.String TAG
+    68:69:public void notifications(int)
+    72:73:public void notifications(int,int)
+    76:77:public void notifications(int,int,int)
+    80:87:public void notifications(android.os.Message)
+    120:121:public void notifications(int,android.os.Bundle)
+    124:125:public void notifications(int,java.lang.String)
+com.rtm.frm.utils.License:
+    private static final java.lang.String licenceFile
+    private static final java.lang.String licenceSpit
+    private static final java.lang.String KEY_LICENSE_USERID
+    private static final java.lang.String KEY_LICENSE_PAKAGE
+    private static final java.lang.String KEY_LICENSE_KEY
+    private java.lang.String mUrl
+    private java.lang.String mUserId
+    private java.lang.String key
+    22:22:public License()
+com.rtm.frm.utils.Log:
+    private static final java.lang.String TAG
+    4:4:public Log()
+    16:16:public static void log(java.lang.String,java.lang.String)
+    22:23:public static void log(java.lang.String)
+    36:37:public static void d(java.lang.String,java.lang.String)
+com.rtm.frm.utils.MD5Util:
+    67:67:public static java.lang.String getMD5String(java.lang.String)
+    71:72:public static java.lang.String getMD5String(byte[])
+    97:98:public static boolean checkPassword(java.lang.String,java.lang.String)
+com.rtm.frm.utils.ResourceUtil:
+    5:5:public ResourceUtil()
+    7:7:public static int getLayoutId(android.content.Context,java.lang.String)
+    12:12:public static int getStringId(android.content.Context,java.lang.String)
+    22:22:public static int getStyleId(android.content.Context,java.lang.String)
+    27:27:public static int getId(android.content.Context,java.lang.String)
+    32:32:public static int getColorId(android.content.Context,java.lang.String)
+com.rtm.frm.utils.StringHelper:
+    23:23:public StringHelper()
+    61:61:public static java.lang.String getDateStringMdHm(java.util.Date)
+    68:68:public static java.lang.String getDateStringHm(java.util.Date)
+    77:78:public static java.lang.String getTimeString(long)
+    86:87:public static java.lang.String getCurrentString()
+    101:126:public static java.lang.String GetTimeString(java.util.Date)
+    130:138:public static java.lang.String toHexString(byte[])
+    142:142:public static java.lang.String toFullHexString(int,int)
+    146:149:private static java.lang.String fill(java.lang.String,int,char)
+    153:167:public static java.lang.String toMd5(java.io.InputStream)
+    176:182:public static java.lang.String toMd5(java.lang.String)
+    191:201:public static boolean containChinese(java.lang.String)
+    206:215:public static boolean isChinese(char)
+    223:246:public static boolean isAccount(java.lang.String)
+    254:262:public static boolean isPassword(java.lang.String)
+    269:272:public static boolean isForumName(java.lang.String)
+    282:284:public static boolean isMobileNo(java.lang.String)
+    294:297:public static boolean isEmpty(java.lang.String)
+    325:331:public static java.lang.String getUrlDecode(java.lang.String)
+    338:346:public static int byteLength(java.lang.String)
+    350:370:public static java.lang.String cutString(java.lang.String,int)
+    406:457:public static byte[] base64Decode(java.lang.String)
+    461:475:public static java.lang.String getNameFromUrl(java.lang.String)
+com.rtm.frm.utils.Utils:
+    42:42:public Utils()
+    51:58:public static int sum(java.util.List)
+    61:68:public static int sum(java.util.List,int)
+    74:79:public static android.graphics.Bitmap convertViewToBitmap(android.view.View)
+    83:89:public static android.graphics.Bitmap readBitmap(android.content.Context,int)
+    114:127:public static java.io.File createFileIfNotFound(java.lang.String)
+    137:149:public static boolean checkDir(java.lang.String)
+    194:196:public static byte[] bitmapToBytes(android.graphics.Bitmap)
+    228:233:public static void hideSoftKeyPad(android.content.Context,android.view.View)
+    237:242:public static void showSoftKeyPad(android.content.Context,android.view.View)
+    245:256:public static int contains(java.lang.String[],java.lang.String)
+    260:261:public static int dip2px(android.content.Context,float)
+    265:266:public static int px2dip(android.content.Context,float)
+    270:270:public static int getEquipmentWidth(android.content.Context)
+    274:274:public static int getEquipmentHeight(android.content.Context)
+    279:285:public static void printLogToFile(java.lang.String,java.lang.String)
+    309:311:public static android.graphics.Bitmap decodeBitmap(java.lang.String)
+    315:317:public static android.graphics.Bitmap decodeBitmap(byte[])
+    322:332:public static double computeAngle(double,double,double,double,double,double)
+    337:355:public static int isoneline(double,double,double,double,double,double)
+    363:366:public static double computedistance(double,double,double,double)
+    378:378:public static int getColor(android.content.Context,int)
+    382:382:public static java.lang.String getString(android.content.Context,int)
+    386:393:public static void killApp(boolean)
+    396:405:public static java.lang.String[] reverse(java.lang.String[])
+    409:421:public static java.lang.String getFloor(int)
+    433:434:public static boolean equalsLocale(java.lang.String)
+    497:505:public java.util.Properties loadConfig(android.content.Context,java.lang.String)
+    510:519:public boolean saveConfig(android.content.Context,java.lang.String,java.util.Properties)
+    577:582:public static int FloorString2Int(java.lang.String)
+com.rtm.frm.utils.XmlHelper:
+    19:19:public XmlHelper()
+    21:32:public static org.w3c.dom.NodeList getNodeListByTag(java.lang.String,java.lang.String)
+    71:81:public static org.w3c.dom.Element getRootElement(java.lang.String)
+    86:100:public static java.lang.String getValueByTag(org.w3c.dom.Element,java.lang.String)
+    104:113:public static int getIntValueByTag(org.w3c.dom.Element,java.lang.String)
+    118:127:public static float getFloatValueByTag(org.w3c.dom.Element,java.lang.String)
+com.rtm.frm.vmap.Coord:
+    public static final int LENGTH
+    13:13:public static int compare(com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord)
+    30:38:public boolean equals(com.rtm.frm.vmap.Coord)
+    42:50:public int compareTo(com.rtm.frm.vmap.Coord)
+    54:57:public float distance(com.rtm.frm.vmap.Coord)
+com.rtm.frm.vmap.Coord$Double
+com.rtm.frm.vmap.Edge:
+    public int mId
+    public int mFromNodeId
+    public int mToNodeId
+    public int mWeight
+    public int[] mPointIds
+    public int nLayerId
+    public int[] mExt
+    4:4:public Edge()
+com.rtm.frm.vmap.Envelope:
+    public static final int length
+    30:38:public static boolean intersects(com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord)
+    43:64:public static boolean intersects(com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord)
+    71:73:public Envelope(int,int,int,int)
+    75:77:public Envelope(com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord)
+    79:81:public Envelope(com.rtm.frm.vmap.Coord)
+    83:85:public Envelope(com.rtm.frm.vmap.Envelope)
+    92:106:public void init(int,int,int,int)
+    109:112:public void init(com.rtm.frm.vmap.Coord,com.rtm.frm.vmap.Coord)
+    115:118:public void init(com.rtm.frm.vmap.Coord)
+    121:127:public void init(com.rtm.frm.vmap.Envelope)
+    143:143:public int getWidth()
+    147:147:public int getHeight()
+    151:154:public void setHeight(int)
+    157:160:public void setWidth(int)
+    163:167:public void inflate(int,int)
+    170:174:public void inflate(int,int,int,int)
+    178:184:public void deflate(int,int)
+    187:195:public void inflateByRatio(int)
+    198:201:public void expandToInclude(com.rtm.frm.vmap.Coord)
+    204:205:public void expandBy(double)
+    208:219:public void expandBy(double,double)
+    222:241:public void expandToInclude(int,int)
+    244:263:public void expandToInclude(int,int,int,int)
+    266:270:public void expandToInclude(com.rtm.frm.vmap.Envelope)
+    273:277:public void translate(int,int)
+    280:282:public com.rtm.frm.vmap.Coord centre()
+    286:297:public void setCentre(int,int)
+    300:307:public com.rtm.frm.vmap.Envelope intersection(com.rtm.frm.vmap.Envelope)
+    320:322:public boolean contains(com.rtm.frm.vmap.Coord)
+    327:327:public boolean contains(int,int)
+    331:334:public boolean intersects(com.rtm.frm.vmap.Envelope)
+    341:344:public boolean intersects(int,int,int,int)
+    349:351:public boolean intersects(com.rtm.frm.vmap.Coord)
+    355:355:public boolean intersects(int,int)
+    359:362:public boolean contains(com.rtm.frm.vmap.Envelope)
+    367:386:public int distance(com.rtm.frm.vmap.Envelope)
+com.rtm.frm.vmap.Layer:
+    public com.rtm.frm.vmap.Node[] mNodes
+    28:31:public void clear()
+    35:45:public java.lang.String findShapePoint(int)
+com.rtm.frm.vmap.Map:
+    private java.lang.String mbuildid
+    private java.lang.String mfloorid
+    private int mVersion
+    37:37:public boolean isOpened()
+    67:67:public java.lang.String getPath()
+    71:74:public void close()
+com.rtm.frm.vmap.Map$Location
+com.rtm.frm.vmap.Node
+com.rtm.frm.vmap.Shape:
+    154:158:public boolean Intersect(com.rtm.frm.vmap.Shape)
+com.rtmap.wifipicker.data.Layer$Metadata:
+    public static final int length
+com.rtmap.wifipicker.data.Map$Location
+com.rtmap.wifipicker.data.Map$Metadata:
+    public static final int length
+com.rtmap.wifipicker.widget.MapWidget$DrawThread:
+    584:584:public void setNextPosition(int)
+    599:599:protected android.graphics.Bitmap getBitmap()
+com.rtmap.wifipicker.wifi.WebGatherData$XmlNode
+com.rtmap.wifipicker.wifi.WebGatherLogic$WifiUpdateTask
+org.xyds.xmlparse.ArrayMap
+org.xyds.xmlparse.ArrayMap$Entry
+org.xyds.xmlparse.ArrayMap$EntryIterator
+org.xyds.xmlparse.ArrayMap$EntrySet
+org.xyds.xmlparse.ClassInfo
+org.xyds.xmlparse.ClassInfo$1
+org.xyds.xmlparse.DataUtil
+org.xyds.xmlparse.DateTime
+org.xyds.xmlparse.DefaultXmlParserFactory
+org.xyds.xmlparse.FieldInfo
+org.xyds.xmlparse.FieldInfo$1
+org.xyds.xmlparse.GenericData
+org.xyds.xmlparse.GenericData$EntryIterator
+org.xyds.xmlparse.GenericData$EntrySet
+org.xyds.xmlparse.GenericXml
+org.xyds.xmlparse.HttpParser
+org.xyds.xmlparse.Key
+org.xyds.xmlparse.Node
+org.xyds.xmlparse.Object2XmlParse
+org.xyds.xmlparse.ReflectionMap
+org.xyds.xmlparse.ReflectionMap$Entry
+org.xyds.xmlparse.ReflectionMap$EntryIterator
+org.xyds.xmlparse.ReflectionMap$EntrySet
+org.xyds.xmlparse.Xml
+org.xyds.xmlparse.Xml$CustomizeParser
+org.xyds.xmlparse.XmlHttpParser
+org.xyds.xmlparse.XmlNamespaceDictionary
+org.xyds.xmlparse.XmlNamespaceDictionary$ElementSerializer
+org.xyds.xmlparse.XmlParserFactory

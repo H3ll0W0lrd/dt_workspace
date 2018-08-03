@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rtmap.mapdemo"
+    android:versionCode="9"
+    android:versionName="1.9" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- *****智慧图服务定位地图服务**** -->
+        <!-- 请到智慧图开发者平台（www.lbs.rtmap.com）申请你应用的key,将申请的key替换android:value="你的key" -->
+        <meta-data
+            android:name="RTMAP_KEY"
+            android:value="kSaQF8jS3t" />
+        
+        <!-- 定位服务，请拷贝到你的应用中，如果仅仅使用地图功能，请勿拷贝 -->
+        <service
+            android:name="com.rtm.location.logic.RtmapLbsService"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+        </service>
+        <!-- *****智慧图服务定位地图服务**** -->
+        
+        
+        
+        <activity android:name="com.rtmap.locationdemo.MapDemo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rtmap.locationdemo.BuildListActivity"></activity>
+        <activity android:name="com.rtmap.locationdemo.MapActivity"></activity>
+        <activity android:name="com.rtmap.locationdemo.SearchActivity"></activity>
+        <activity android:name="com.rtmap.locationdemo.CateActivity"></activity>
+        <activity android:name="com.rtmap.locationdemo.NavigationActivity"></activity>
+        <activity android:name="com.rtmap.locationdemo.AnimNavigationActivity"></activity>
+    </application>
+
+</manifest>

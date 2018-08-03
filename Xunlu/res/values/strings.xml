@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">寻鹿</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_message">提示</string>
+    <string name="loading_init">正在初始化&#8230;</string>
+    <string name="loading_login">正在登录&#8230;</string>
+    <string name="loading">正在加载</string>
+    <string name="toast_init">正在初始化&#8230;</string>
+    <string name="toast_init_finished">初始化完成</string>
+    <string name="toast_nav_route_err">没有找到路线</string>
+    <string name="toast_clear_cache">请在应用管理清空缓存</string>
+    <string name="toast_post_timeout">请求超时</string>
+    <string name="toast_post_net_exception">哦哦，您的网络连接出现异常</string>
+    <string name="error_sd_error">存储卡读写失败</string>
+    <string name="error_net_unuse">网络不可用</string>
+    <string name="error_conn">服务器连接错误</string>
+    <string name="message_share_poi">这里是%1$s %2$s %3$s #寻鹿#</string>
+    
+    <!-- 百度地图 -->
+    <string name="route_line_plan">路线规划</string>
+    <string name="route_line_room">进入室内</string>
+    <string name="route_line_plan_close">关闭路线</string>
+    <string name="fragment_baidu_title">室外地图</string>
+
+    <!-- 优惠 -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="nosdcard">未找到SD卡</string>
+    <string name="begindownload">开始下载</string>
+    <string name="filesaved">文件已保存</string>
+    <string name="coupons_net_post_running">正在查询，请稍等</string>
+    <string name="title_coupon_tip_start">本层共有</string>
+    <string name="title_coupon_tip_end">个优惠活动在进行</string>
+    <string name="message_no_route">导航失败</string>
+
+    <!-- 我的登陆界面 -->
+    <string name="mine_logindes">登录可查看我的私有地图,优惠券等优惠信息</string>
+    <string name="mine_banquan">© 2014 北京智慧图科技有限责任公司</string>
+    <string name="mine_aboutus">关于我们</string>
+    <string name="mine_weibo">官方微博</string>
+    <string name="mine_mymap">我的地图</string>
+    <string name="mine_coupon">优惠提醒</string>
+    <string name="mine_about">关于寻鹿</string>
+    <string name="mine_update">检查版本更新</string>
+    <!-- 登陆 -->
+    <string name="mine_login">登录</string>
+    <string name="mine_title">我的</string>
+    <string name="message_no_update">您当前为内测最新版本！</string>
+    <string name="message_net_error">您的网络有些问题，请重新试试</string>
+    <string name="message_login_err">用户名或密码错误!</string>
+    <string name="message_fill_user_password">用户名或密码不能为空</string>
+    <string name="message_wrong_password">用户名或密码错误!</string>
+    <string name="message_login_succ">登陆成功</string>
+    <!-- 关于 -->
+    <string name="title_about_support">北京智慧图科技有限责任公司</string>
+    <string name="title_about_page">http://www.rtmap.com</string>
+    <string name="title_about_weibo">http://weibo.com/xunluchina</string>
+    <string name="title_about_phone">010-62673237</string>
+    <string name="title_about">关于寻鹿</string>
+    <string name="title_about_weixin">xunlu_rtmap</string>
+    <string name="title_rtmap">RTMAP</string>
+    <!-- AR -->
+    <string name="arshow_isnear">在您附近</string>
+    <string name="arluopantip">为了保证精确度，使用之前请先校准指南针!</string>
+    <string name="message_cannot_locate">暂时无法获取您的位置</string>
+    <string name="message_outside_current_build">您不在当前建筑物内</string>
+    
+    
+	<string name="current_time">%1$s时%2$s分</string>
+    <string name="navigate_to_floor">%1$s，由此到%2$s</string>
+    <string name="navigate_up_to_floor">乘%1$s上到%2$s</string>
+    <string name="navigate_down_to_floor">乘%1$s下到%2$s</string>
+    <string name="navigate_node_to_node">由%1$s步行至%2$s</string>
+    
+    <!-- 我页面 -->
+    <string name="mine_tab_add">+</string>
+    <string name="mine_tab_talk">会话</string>
+    <string name="mine_tab_friend">好友</string>
+    
+    <!-- 活动页面 -->
+    <string name="promotion_title">活动</string>
+    <string name="promotion_manager_title">活动管理</string>
+    <string name="promotion_manager">管理</string>
+    
+    <!-- button -->
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    
+    <!-- db 参数名称 -->
+	<string name="db_collect_build">个人收藏</string>
+	
+	<!-- alert -->
+	<string name="alert_exchange_build_msg">您当前在%1$s,是否切换？</string>
+	
+	<!-- setting about -->
+	<string name="setting_about_weixin">xunlu_rtmap</string>
+	<string name="setting_about_phone">010-62673237</string>
+	<string name="setting_about_weibo">http://weibo.com/xunluchina</string>
+	<string name="setting_about_web">www.rtmap.com</string>
+	<string name="setting_about_com">北京智慧图科技有限责任公司</string>
+	<string name="setting_clear_cache">请稍等,正在清除缓存</string>
+	
+</resources>

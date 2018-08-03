@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="et_hint_color">#9caaae</color>
+    <color name="et_text_color">#4c6466</color>
+    <color name="blue_one">#39c0e7</color>
+     <color name="title_color">#0bacda</color>
+     <color name="line_color">#ebebeb</color>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_round"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/main_footer"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/order_header_btn_style"
+            android:background="@drawable/xxk_on_yj_l_dd_btn"
+            android:checked="true"
+            android:text="矢量" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/order_header_btn_style"
+            android:background="@drawable/xxk_yj_r_dd_btn"
+            android:text="图片" />
+    </RadioGroup>
+
+    <ImageView style="@style/set_line_style" />
+
+    <TextView
+        android:id="@+id/my_location"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="当前位置"
+        android:textColor="@color/center_record_item_time_color"
+        android:textSize="14sp" />
+
+    <ImageView style="@style/set_line_style" />
+
+    <TextView
+        android:id="@+id/manager"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="配置"
+        android:textColor="@color/center_record_item_time_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.rtmap.locationcheck.util.map.MapWidget
+        android:id="@+id/map_view_map_correct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_font_style"
+            android:text="地图" />
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="菜单∨"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="提示"
+        android:textColor="@color/title_color"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_direction_right"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="   R   " />
+
+    <Button
+        android:id="@+id/btn_direction_down"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/btn_direction_right"
+        android:gravity="center"
+        android:text="   D   " />
+
+    <Button
+        android:id="@+id/btn_direction_left"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_toLeftOf="@id/btn_direction_down"
+        android:gravity="center"
+        android:text="   L   " />
+
+    <Button
+        android:id="@+id/btn_direction_up"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_above="@id/btn_direction_down"
+        android:layout_toLeftOf="@id/btn_direction_right"
+        android:gravity="center"
+        android:text="   U   " />
+
+    <Button
+        android:id="@+id/mark"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dip"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="添加" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/gray_bord_shap"
+        android:hint="用户名"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size5" />
+
+    <EditText
+        android:id="@+id/edt_pass_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gray_bord_shap"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size5" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vision_shape"
+        android:paddingBottom="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="10dp"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size5" />
+
+
+</LinearLayout>

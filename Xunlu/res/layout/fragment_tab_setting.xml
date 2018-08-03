@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tab1_list_item_bg" >
+
+    <!-- 这个部分用统一的title -->
+
+    <FrameLayout
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_title_height"
+        android:background="@android:color/white" >
+
+        <LinearLayout 
+            android:id="@+id/lin_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:clickable="true">
+            
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tab2_back" 
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/line" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fragment_setting_item_height"
+        android:layout_below="@+id/nav_title"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/setting_item1_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="消息推送" />
+
+        <CheckBox
+            android:id="@+id/setting_push_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/v4_checkbox_bg"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:src="@drawable/setting_more" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab2_setting_item_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_item2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fragment_setting_item_height"
+        android:layout_below="@+id/setting_item1"
+        android:background="@color/white"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/setting_item2_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="清除缓存" />
+
+        <TextView
+            android:id="@+id/tv_cookie_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="216KB"
+            android:textColor="@color/tab1_list_date" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab2_setting_item_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

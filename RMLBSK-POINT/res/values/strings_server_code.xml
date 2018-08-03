@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="server_error_code">-1</string>
+    <string name="net_error_code">-2</string>
+    <string name="data_error_code">-3</string>
+    <string name="data_send_error_code">-4</string>
+    <string name="server_error">连接失败</string>
+    <string name="net_error">网络不给力哦!</string>
+    <string name="data_error">数据异常</string>
+    <string name="data_send_error">发送数据异常</string>
+
+</resources>

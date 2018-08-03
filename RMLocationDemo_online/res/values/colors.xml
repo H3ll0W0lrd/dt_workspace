@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+
+    <color name="line_gray_1">#cccccc</color>
+    <color name="floor_text_on_color">#898989</color>
+     <color name="gray">#b4b4b4</color>
+     <color name="text_color">#bfbfbf</color>
+
+</resources>

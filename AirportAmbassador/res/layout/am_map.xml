@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_font_style"
+            android:text="首都机场" />
+
+        <ImageView
+            android:id="@+id/center"
+            style="@style/btn_ok_style"
+            android:src="@drawable/u14" />
+    </RelativeLayout>
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <ImageView
+        android:id="@+id/sacnner"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/u21"
+        android:src="@drawable/u23" />
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:text="请您前往指定区域" />
+
+</RelativeLayout>

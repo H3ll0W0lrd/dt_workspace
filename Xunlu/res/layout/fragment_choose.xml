@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.rtm.frm.activity.MainActivity"
+    android:background="@android:color/white" >
+
+    <Button
+        android:id="@+id/btn_airport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="机场导航" />
+
+    <Button
+        android:id="@+id/btn_mall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_airport"
+        android:text="商场导航" />
+
+    <Button
+        android:id="@+id/btn_my_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_mall"
+        android:text="我的地图" />
+
+    <Button
+        android:id="@+id/btn_show_baidu_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_my_map"
+        android:text="在百度地图显示建筑物"
+        android:visibility="visible" />
+
+</RelativeLayout>

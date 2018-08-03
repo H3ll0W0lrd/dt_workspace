@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_font_style"
+            android:text="POI采集" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="名称："
+            android:textColor="@color/center_record_item_time_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/poi_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:textColor="@color/center_record_item_time_color"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="分类："
+            android:textColor="@color/center_record_item_time_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/poi_cate"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="服装"
+            android:textColor="@color/center_record_item_time_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/poi_cate_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center_vertical"
+        android:text="男装，女装，男女装，内衣，鞋"
+        android:textColor="@color/center_record_item_time_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="拍照："
+            android:textColor="@color/center_record_item_time_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/d" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/d" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/grayblack"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

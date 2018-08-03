@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="添加Beacon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/scanner"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="扫二维码"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginBottom="5dp" />
+
+            <TextView
+                android:id="@+id/photo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="从相册选取"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="节点标题(不可编辑，16位mac地址)"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mac"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="C91A00000000"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="UUID : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/uuid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:maxLength="4"
+                    android:text="C91A"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="Major : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/major"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="Minor : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/minor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="坐标x/y（单位：毫米）"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/coord"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="100/200"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="状态"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_item_bg" >
+
+                <TextView
+                    android:id="@+id/work_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="未知"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/open_beacon_scanner"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/blue_btn"
+                    android:gravity="center"
+                    android:text="扫描beacon"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="阈值参数"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="SwitchMin : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/min"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberSigned"
+                    android:text="-90"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="SwitchMax : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/max"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberSigned"
+                    android:text="-75"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/blue_btn"
+                android:text="添加"
+                android:textColor="@color/login_text_color"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

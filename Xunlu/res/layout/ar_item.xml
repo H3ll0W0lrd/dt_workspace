@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="25dp" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/arpoi_headbg" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:background="@color/white"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="helloaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textColor="@color/arshow_poitext"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/img"
+        android:background="@color/white"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/name"
+        android:text="hello"
+        android:textColor="@color/arshow_poitext"
+        android:textSize="9dp" />
+
+</RelativeLayout>

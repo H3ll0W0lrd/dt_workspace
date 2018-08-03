@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_rectangle_gray"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_start_charging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/toast_text_margin_left"
+        android:layout_marginRight="@dimen/toast_text_margin_left"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="开始充电"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/toast_text_size" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/toast_bg" />
+
+    <TextView
+        android:id="@+id/tv_end_charging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/toast_text_margin_left"
+        android:layout_marginRight="@dimen/toast_text_margin_left"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="结束充电"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/toast_text_size" />
+
+</LinearLayout>

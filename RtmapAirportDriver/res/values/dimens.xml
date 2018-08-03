@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- login -->
+    <dimen name="login_tv_width">80dp</dimen>
+    <dimen name="login_tv_margin_top">10dp</dimen>
+    <dimen name="login_et_width">120dp</dimen>
+    <!-- 自定义toast -->
+    <dimen name="toast_margin_left">40dp</dimen>
+    <dimen name="toast_height">100dp</dimen>
+    <dimen name="toast_text_size">20dp</dimen>
+    <dimen name="toast_text_margin_left">10dp</dimen>
+    <dimen name="toast_corner">8dp</dimen>
+    <!-- MainActivity -->
+    <dimen name="main_top_text_size">14dp</dimen>
+    <dimen name="main_img_below_width">60dp</dimen>
+    <dimen name="main_img_below_margin">20dp</dimen>
+    <dimen name="main_top_height">30dp</dimen>
+    <dimen name="main_top_margin_left">10dp</dimen>
+    <dimen name="main_count_text_size">90dp</dimen>
+    <dimen name="main_count_width">220dp</dimen>
+
+</resources>

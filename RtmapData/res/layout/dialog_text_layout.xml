@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_round"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/beacon_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:padding="10dp"
+        android:text="信号："
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/dialog_round"
+            android:text="修改"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/delete_restore"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dialog_round"
+            android:text="删除"
+            android:layout_marginRight="7dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/move"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/dialog_round"
+            android:text="移动"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tab1_list_item_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <FrameLayout
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_title_height"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="优惠"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/line" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/tab1_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@color/tab1_list_item_bg"
+        android:dividerHeight="10dip"
+        android:listSelector="#00000000"
+        android:scrollbars="none" />
+
+</RelativeLayout>

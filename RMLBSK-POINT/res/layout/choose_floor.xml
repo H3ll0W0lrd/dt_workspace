@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.rtmap.experience.util.view.DTWheelView
+        android:id="@+id/floor_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#9b9ba8"
+        android:text="确定"
+        android:textColor="@color/grid_item_bg_up"
+        android:textSize="20sp" />
+
+</LinearLayout>

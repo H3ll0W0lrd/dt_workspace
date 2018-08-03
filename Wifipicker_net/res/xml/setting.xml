@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="Setting" >
+
+    <PreferenceCategory
+        android:key="PickPara"
+        android:title="采集参数设置" >
+        <EditTextPreference
+            android:dialogTitle="0: windows  1: linux"
+            android:enabled="true"
+            android:key="server_type"
+            android:summary="windows"
+            android:title="服务器类型" />
+        <EditTextPreference
+            android:dialogTitle="服务器地址"
+            android:enabled="true"
+            android:key="ip"
+            android:summary="ip"
+            android:title="服务器地址" />
+        <EditTextPreference
+            android:dialogTitle="端口号"
+            android:enabled="true"
+            android:key="port"
+            android:summary="port"
+            android:title="端口号" />
+        <EditTextPreference
+            android:dialogTitle="MAC地址"
+            android:enabled="true"
+            android:key="tag1"
+            android:summary="tag1"
+            android:title="MAC" />
+        <EditTextPreference
+            android:dialogTitle="步进微调(单位：像素)"
+            android:enabled="true"
+            android:key="step_adjust"
+            android:summary="step_adjust"
+            android:title="步进微调（单位：像素）" />
+        <EditTextPreference
+            android:dialogTitle="网络采集限时(s)"
+            android:enabled="true"
+            android:key="net_time"
+            android:summary="net_time"
+            android:title="网络采集限时(s)" />
+        <Preference
+            android:key="Model"
+            android:summary="C8650"
+            android:title="手机型号" />
+        <Preference
+            android:key="OSVersion"
+            android:summary="android2.3.6"
+            android:title="操作系统版本" />
+        <Preference
+            android:key="SoftwareVersion"
+            android:summary="VERSION TEST"
+            android:title="软件版本" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

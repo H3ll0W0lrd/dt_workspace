@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab1_item_bg_shape" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="西单商场-冬季商品强劲上市，全场低至两折"
+        android:textColor="@color/tab1_list_title"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="11月14日"
+        android:textColor="@color/tab1_list_date"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/img_big"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/tv_date"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_intruduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_big"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:text="双层隔热大肚办公杯，"
+        android:textColor="@color/tab1_list_intruduction"
+        android:textSize="14dp" 
+        android:paddingBottom="13dp"/>
+
+</RelativeLayout>

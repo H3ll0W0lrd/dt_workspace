@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">机场大使</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="input_account">请输入用户名</string>
+    <string name="input_pas">请输入6位以上密码</string>
+    <string name="input_area">请选择区域</string>
+
+</resources>

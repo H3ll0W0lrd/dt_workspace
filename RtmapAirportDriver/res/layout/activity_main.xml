@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/main_top_margin_left"
+    android:layout_marginRight="@dimen/main_top_margin_left" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_top_height"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_top_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:text="上岗时间：2015-06-12"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/main_top_line"
+            android:textSize="@dimen/main_top_text_size" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/main_top_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="myClick"
+            android:text="退出登陆"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/main_top_line"
+            android:textSize="@dimen/main_top_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_top_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" >
+
+        <ImageView
+            android:id="@+id/img_qr"
+            android:layout_width="@dimen/main_img_below_width"
+            android:layout_height="@dimen/main_img_below_width"
+            android:layout_marginLeft="@dimen/main_img_below_margin"
+            android:onClick="myClick"
+            android:src="@drawable/img_qr" />
+
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="@dimen/main_img_below_width"
+            android:layout_height="@dimen/main_img_below_width"
+            android:layout_centerHorizontal="true"
+            android:onClick="myClick"
+            android:src="@drawable/img_camera" />
+
+        <ImageView
+            android:id="@+id/img_count"
+            android:layout_width="@dimen/main_img_below_width"
+            android:layout_height="@dimen/main_img_below_width"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/main_img_below_margin"
+            android:onClick="myClick"
+            android:src="@drawable/img_count" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/passenger"
+        android:layout_width="@dimen/main_count_width"
+        android:layout_height="@dimen/main_count_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/img_passenger"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/main_count_text_color"
+        android:textSize="@dimen/main_count_text_size" />
+
+    <TextView
+        android:id="@+id/passenger_warn"
+        android:layout_width="@dimen/main_count_width"
+        android:layout_height="@dimen/main_count_width"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/img_passenger_wanr"
+        android:gravity="center"
+        android:textColor="@color/main_count_text_color"
+        android:textSize="@dimen/main_count_text_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_blue_tooth_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <TextView
+        android:id="@+id/tv_coord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_blue_tooth_time" />
+
+    <Button
+        android:id="@+id/btn_go_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_coord"
+        android:text="go map"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/img_event"
+        android:layout_width="@dimen/main_img_below_width"
+        android:layout_height="@dimen/main_img_below_width"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/main_img_below_margin"
+        android:layout_marginTop="50dp"
+        android:onClick="myClick"
+        android:src="@drawable/img_note" />
+
+    <ImageView
+        android:id="@+id/img_close_sound"
+        android:layout_width="@dimen/main_img_below_width"
+        android:layout_height="@dimen/main_img_below_width"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/img_event"
+        android:layout_marginRight="@dimen/main_img_below_margin"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_stop_sound"
+        android:onClick="myClick"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/location_updata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img_event"
+        android:text="位置上传" />
+
+</RelativeLayout>

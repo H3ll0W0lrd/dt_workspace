@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/fragment_mine_talk_item_height"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/fragment_mine_talk_item_padding"
+    android:paddingTop="@dimen/fragment_mine_talk_item_padding" >
+
+    <ImageView
+        android:id="@+id/friend_head"
+        android:layout_width="@dimen/fragment_mine_talk_item_head"
+        android:layout_height="@dimen/fragment_mine_talk_item_head"
+        android:background="@drawable/icon_head"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/fragment_mine_talk_item_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/fragment_mine_talk_item_padding" >
+
+            <TextView
+                android:id="@+id/friend_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="敬请期待"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fragment_mine_talk_item_nickname" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:10"
+                android:textColor="#8E8E93"
+                android:textSize="@dimen/fragment_mine_talk_item_msg" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/friend_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="敬请期待"
+            android:textColor="#8E8E93"
+            android:textSize="@dimen/fragment_mine_talk_item_msg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/line" />
+    </LinearLayout>
+
+</LinearLayout>

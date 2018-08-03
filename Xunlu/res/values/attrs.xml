@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <declare-styleable name="rtmap">
+        <attr name="navLeftImg" format="reference" />
+        <attr name="navLeftImgWidth" format="reference" />
+        <attr name="navLeftImgHeight" format="reference" />
+        
+        <attr name="navLeftText" format="reference" />
+        
+        <attr name="navRightImg" format="reference" />
+        <attr name="navRightImgWidth" format="reference" />
+        <attr name="navRightImgHeight" format="reference" />
+        
+        <attr name="navPaddingLeft" format="reference" />
+        <attr name="navPaddingRight" format="reference" />
+        
+        <attr name="navRightText" format="reference" />
+        <attr name="navTitleText" format="reference" />
+    </declare-styleable>
+
+</resources>

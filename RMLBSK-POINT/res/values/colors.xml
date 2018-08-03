@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color> <!-- 透明 -->
+    <color name="white">#FFFFFF</color> <!-- 白色 -->
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="dt_us_color">#010101</color>
+    <color name="set_text_color">#4f4f5f</color>
+    <color name="set_bg">#efefef</color>
+    <color name="title_color">#09091a</color>
+    <color name="main_sign_text_color">#898a8f</color>
+    <color name="main_sign_bg_color">#e8e5de</color>
+    <color name="name_color">#333333</color>
+    <color name="line_color">#ebebeb</color>
+    <color name="grayblack">#999999</color> <!-- 灰黑色 -->
+    <color name="friend_line">#e9ebeb</color>
+    <color name="list_item_press">#f2f4f5</color>
+    <color name="avatar_border_color">#8e8879</color>
+    <color name="login_et_hint_color">#c7c7cd</color>
+    <color name="red">#f33c5a</color>
+    <color name="mark_red">#ff0000</color> <!-- 红色 -->
+    <color name="sign_red_color">#f4687a</color>
+    <color name="record_sign_color">#c5cbd5</color>
+    <color name="main_sign_color">#6d888f</color>
+    <color name="center_text_color">#407685</color>
+    <color name="center_text_bg_color">#15b6e4</color>
+    <color name="center_record_item_time_color">#4c6466</color>
+    <color name="center_record_item_line_color">#e9ebeb</color>
+    <color name="center_record_item_text_color">#a3acaf</color>
+    <color name="center_record_item_text_one_color">#9caaae</color>
+    <color name="reply_list_divider">#d6dddd</color>
+    <color name="dt_alarm_set_value_text_color">#8787b3</color>
+    <color name="dt_alarm_set_item_text_color">#d8d8d8</color>
+    <color name="gray">#98aeb5</color>
+    <color name="gray_text">#859ea5</color>
+    <color name="set_user_hint">#afeafb</color>
+    <color name="purple_color">#5d098d</color>
+    <color name="green">#d2fea9</color>
+    <color name="yellow">#ffc689</color>
+    <color name="grid_item_text_down">#4f4f5f</color>
+    <color name="grid_item_text_up">#989ba8</color>
+    <color name="grid_item_bg_up">#f5f5f5</color>
+
+</resources>

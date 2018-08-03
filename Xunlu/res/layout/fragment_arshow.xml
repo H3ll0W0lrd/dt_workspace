@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <!-- 相对布局，放置两个按钮 -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="24sp" 
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/arguide_guideinfo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/arguide_guideinfo_bg"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arguide_poiicon_bg" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/locate_normal_pressed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/arguide_targetname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="肯德基" />
+
+            <TextView
+                android:id="@+id/arguide_loadinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arguide_targetname"
+                android:layout_centerHorizontal="true"
+                android:maxLines="2"
+                android:text="向前100米右转向前100米右转向前100米右转向前100米右转" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/arguide_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/arguide_close"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:background="@drawable/arguide_close" />
+
+        <com.rtm.frm.view.MySeekBar
+            android:id="@+id/distance_seekbar"
+            android:layout_width="30dip"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:maxHeight="7.0dip"
+            android:minHeight="7.0dip"
+            android:progressDrawable="@drawable/progress"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            android:id="@+id/arshow_distance_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/distance_seekbar"
+            android:layout_below="@+id/distance_seekbar"
+            android:text="23米"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/arshow_buildinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+    
+    <RelativeLayout 
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null">
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="200dp"
+        android:layout_height="278dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:visibility="gone">
+    </ListView>
+
+</RelativeLayout>

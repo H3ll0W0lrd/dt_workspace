@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">体验</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="input_account">请输入用户名</string>
+    <string name="input_pas">请输入验证码</string>
+    <string name="register_pas_error">确认密码有误</string>
+    <string name="register_pas_sign">请确认密码</string>
+    <string name="login_ts_ps">请输入密码</string>
+    <string name="login_ts_account">请输入用户名</string>
+    <string name="surplus_second">剩余%d秒</string>
+     <string name="phone_input">请输入手机号码</string>
+    <string name="phone_input_corrent">请输入正确的手机号码</string>
+    <string name="upload_success">上传成功</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="rule_text">%dmm</string>
+    
+    <string name="startLocate">开启定位 </string>
+	<string name="stopLocate">停止定位</string>
+    
+    <string-array name="upload_dialog">
+        <item>上传Beacon数据</item>
+        <item>上传地图图片</item>
+    </string-array>
+    <string-array name="image_dialog">
+        <item>拍照</item>
+        <item>相册选择</item>
+    </string-array>
+    <string-array name="beacon_dialog">
+        <item>修改</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="down_dialog">
+        <item>下载</item>
+    </string-array>
+</resources>

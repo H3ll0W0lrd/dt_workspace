@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rtmap.indoor_switch.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="消息中心" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/left" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:divider="@color/line_gray_1"
+        android:headerDividersEnabled="false"
+        android:layout_marginTop="-2dp"
+        android:dividerHeight="2px" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/delete"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#dd4f4e" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="清空" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/textView2"
+            android:src="@drawable/icon_delete" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

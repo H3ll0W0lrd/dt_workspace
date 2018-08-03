@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#454545"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#575757"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/uuid"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        
+           <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+             android:textColor="#ffffff"
+             android:background="@android:color/transparent"
+             android:textSize="22sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+             />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FCFCFC" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+    </View>
+
+    <EditText
+        android:id="@+id/curr_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#575757"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+    </View>
+
+    <ListView
+        android:listSelector="@android:color/transparent"  
+        android:id="@+id/uuidlistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null" >
+    </ListView>
+
+</LinearLayout>

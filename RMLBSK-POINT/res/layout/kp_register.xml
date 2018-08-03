@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="加入同学闹钟" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/user_name"
+            style="@style/et_style"
+            android:hint="用户名"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/center_record_item_text_one_color" />
+
+        <EditText
+            android:id="@+id/user_pas"
+            style="@style/et_style"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/center_record_item_text_one_color" />
+
+        <EditText
+            android:id="@+id/user_pas_two"
+            style="@style/et_style"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:src="@color/center_record_item_text_one_color" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/blue_btn"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/login_text_color"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tab_about_pic_bg" />
+
+    <!-- 这个部分用统一的title -->
+
+    <FrameLayout
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_title_height"
+        android:background="@android:color/white" >
+        
+        <LinearLayout 
+            android:id="@+id/lin_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:clickable="true">
+            
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="25dp"
+                android:src="@drawable/tab2_back" 
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关于"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/line" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/nav_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tab_about_icon" />
+
+    <TextView
+        android:id="@+id/tv_xunlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="寻鹿"
+        android:textColor="@color/tab2_about_xunlu_tv"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_vision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_xunlu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="RTMAP V5.2"
+        android:textColor="@color/tab1_list_date"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp" 
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left" 
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/setting_about_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_about_weixin"
+                android:textColor="@color/tab1_list_intruduction" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_weixin"
+            android:layout_marginTop="10dp"
+            android:gravity="left" 
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/setting_about_phone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_about_phone"
+                android:textColor="@color/tab1_list_intruduction" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_phone"
+            android:layout_marginTop="10dp"
+            android:gravity="left" 
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/setting_about_weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_about_weibo"
+                android:textColor="@color/tab1_list_intruduction" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lin_sina"
+            android:layout_marginTop="10dp"
+            android:gravity="left" 
+            android:paddingLeft="30dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/setting_about_web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/setting_about_web"
+                android:textColor="@color/tab1_list_intruduction" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="@string/setting_about_com"
+                android:textColor="@color/tab2_about_com_tv" 
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"/>
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="步进微调(像素) : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/adjust"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="numberSigned"
+                    android:text="5"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/beacon_mapping"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_item_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="查看Beacon映射"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="点击选择常用UUID"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg" >
+
+                <TextView
+                    android:id="@+id/add_uuid"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="添加"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/display_uuid"
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/add_uuid"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="C91A"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="设置默认major"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                 />
+
+            <EditText
+                android:id="@+id/display_major"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="90"
+                android:visibility="gone"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp"
+                 />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="服务器地址"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <RadioGroup
+                android:id="@+id/server_group"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="测试"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="正式"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="版本号："
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/lib_version"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="定位库："
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="联系作者"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="QQ(点击复制)：953022119"
+                android:visibility="gone"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:visibility="gone"
+                android:text="手机(点击拨打)：13126965104"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

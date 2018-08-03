@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <item
+        android:id="@+id/f1"
+        android:title="f1">
+    </item>
+    <item
+        android:id="@+id/f2"
+        android:title="f2">
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="搜索">
+    </item>
+    <item
+        android:id="@+id/navi"
+        android:title="路线规划">
+    </item>
+
+</menu>

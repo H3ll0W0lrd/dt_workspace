@@ -1,0 +1,124 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 自定义dialog样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- 自定义dialog样式:背景不变黑 -->
+    <style name="dialog_white" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去title -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 除去背景色 -->
+    </style>
+    
+    <style name="order_header_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/order_header_text_color</item>
+    </style>
+
+    <!-- 标题样式 -->
+    <style name="title_bar_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@drawable/bg_title_bar</item>
+    </style>
+    <!-- 输入框样式 -->
+    <style name="et_style">
+        <item name="android:ellipsize">middle</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@drawable/dt_trans</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColorHint">@color/center_record_item_text_one_color</item>
+        <item name="android:textColor">@color/center_record_item_time_color</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 标题栏字体样式 -->
+    <style name="title_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- 设置页线样式 -->
+    <style name="set_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:src">@color/friend_line</item>
+    </style>
+    <!-- 返回按钮样式 -->
+    <style name="back_btn_style">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/icon_back</item>
+        <item name="android:padding">13dp</item>
+    </style>
+
+    <style name="dirction_btn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/btn_purple_round</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/purple_color</item>
+    </style>
+    <!-- 设置页文本样式 -->
+    <style name="set_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/center_record_item_time_color</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/list_item_bg</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

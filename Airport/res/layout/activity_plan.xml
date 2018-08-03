@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rtmap.indoor_switch.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="我的航旅" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/left" />
+
+        <ImageView
+            android:id="@+id/msg"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/msg_icon" />
+
+        <ImageView
+            android:id="@+id/mag_sign"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/red_circle" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_search_title"
+        android:background="@color/line_gray_1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="CA1835        2016/05/20"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="北京首都国际机场T3(PEK) -- 上海浦东国际机场(PVG)"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="8:00 -- 10:00"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="登机口：A13       登记时间：7:20"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="座位号：28D       舱位等级：经济舱"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp" />
+
+        <Button
+        android:id="@+id/start"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_btn_round"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="开始导航"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

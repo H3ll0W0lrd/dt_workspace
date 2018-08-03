@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F6F7" >
+
+    <!-- 这个部分用统一的title -->
+
+    <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navLeftImg="@drawable/tab2_back"
+        rtmAttr:navLeftImgHeight="@dimen/nav_title_img_height"
+        rtmAttr:navLeftImgWidth="@dimen/nav_title_img_width"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_title" >
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal" />
+        
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</RelativeLayout>

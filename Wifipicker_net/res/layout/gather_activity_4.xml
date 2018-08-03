@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/tv_map_name"
+            style="@style/title_font_style"
+            android:text="@string/message_not_select_map" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#222222"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/title_back_2_maps_select"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#222222"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/title_gather"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_net_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_margin="10dip"
+        android:src="@drawable/status_red" />
+
+    <TextView
+        android:id="@+id/tv_ap_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/image_net_status"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ap_status"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@id/image_net_status"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/btn_turn_around"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btn_pause"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="更新beacon" />
+
+    <Button
+        android:id="@+id/btn_direction_right"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="   R   " />
+
+    <Button
+        android:id="@+id/btn_direction_down"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_direction_right"
+        android:gravity="center"
+        android:text="   D   " />
+
+    <Button
+        android:id="@+id/btn_direction_left"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_direction_down"
+        android:gravity="center"
+        android:text="   L   " />
+
+    <Button
+        android:id="@+id/btn_direction_up"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/btn_direction_down"
+        android:layout_toLeftOf="@id/btn_direction_right"
+        android:gravity="center"
+        android:text="   U   " />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/map_view" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pin48" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_mark"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="标记" />
+
+</RelativeLayout>

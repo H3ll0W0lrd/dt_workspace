@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="tab_btn_text">#666E73</color>
+    <color name="search_cancel_tv_bg">#393939</color>
+    <color name="tab_title_jb_top">#ffffff</color>
+    <color name="tab_title_jb_bottom">#f2f2f2</color>
+    <color name="search_stroke">#d5d5d5</color>
+    -->
+
+    <color name="white">#ffffff</color>
+
+    <!-- toast -->
+    <color name="toast_bg">#cc09091a</color>
+    <!-- MainActivity -->
+    <color name="main_top_line">#72A7FF</color>
+    <color name="main_count_text_color">#f6ae2a</color>
+
+</resources>

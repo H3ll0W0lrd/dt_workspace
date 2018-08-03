@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.testfragment.MainActivity$PlaceholderFragment" >
+
+   <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right"/>
+
+    <TextView
+        android:id="@+id/nav_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_title"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="信息介绍" />
+
+    <ListView
+        android:id="@+id/nav_floor_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/nav_info"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_nav_close"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@drawable/navigate_begin_bg"
+        android:text="显示导航" />
+
+</RelativeLayout>

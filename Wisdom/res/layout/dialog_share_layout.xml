@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/title_bar_style"
+        android:background="@android:color/transparent" >
+
+        <TextView
+            style="@style/title_font_style"
+            android:text="分享"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/dialog_back"
+            style="@style/title_back_style"
+            android:layout_width="50dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/dialog_back_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:src="@color/page_bg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/share_icon2" />
+
+    <ImageView
+        android:id="@+id/wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/share_wx" />
+
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/share_qq" />
+
+    <ImageView
+        android:id="@+id/weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/share_weibo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/share_icon1" />
+
+</LinearLayout>

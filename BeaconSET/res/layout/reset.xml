@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#454545"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#575757"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/majorminor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/soft_reboot"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:text="@string/save"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FCFCFC" >
+    </View>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+    </View>
+
+    <EditText
+        android:id="@+id/curr_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#575757"
+        android:gravity="center"
+        android:hint="@string/intputmima"
+        android:inputType="text"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="360360cn"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/my_checkbox"
+        android:checked="false" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+    </View>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/soft_reboottip"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

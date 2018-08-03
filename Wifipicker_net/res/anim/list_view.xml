@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/item"
+    android:delay="0.2"
+    android:animationOrder="random"
+    />
+<!-- android:animation : 每一个item执行的动画
+android:delay : 每一个item出现的时间间隔
+android:animationOrder : 动画执行顺序 normal:正序  reverse：反序  random：随机
+	 -->

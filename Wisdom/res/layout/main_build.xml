@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a091b" >
+
+    <ListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#0a091b"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        style="@style/title_bar_style"
+        android:background="#0a091b" >
+
+        <RelativeLayout
+            android:id="@+id/build_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/build_content"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="60dp"
+                android:background="@android:color/transparent"
+                android:hint="请输入商场名称"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color1"
+                android:textColorHint="@color/text_color1"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignLeft="@+id/build_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:src="@drawable/search_icon" />
+
+            <ImageView
+                android:id="@+id/build_content_clear"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="70dp"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/build_cancel"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/build_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/title_font_style"
+                android:textColor="@android:color/white"
+                android:text="北京" />
+
+            <TextView
+                android:id="@+id/build_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="我的位置"
+                android:textColor="@color/text_color1"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical" >
+
+        <com.rtmap.wisdom.util.listview.BuildAnimListview
+            android:id="@+id/build_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" >
+        </com.rtmap.wisdom.util.listview.BuildAnimListview>
+
+        <ImageView
+            android:id="@+id/build_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="270dp"
+            android:src="@drawable/build_like_update_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

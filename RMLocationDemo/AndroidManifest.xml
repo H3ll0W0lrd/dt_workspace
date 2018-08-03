@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rtmap.locationdemo.beta"
+    android:versionCode="25"
+    android:versionName="3.2" >
+
+    <!-- com.rtmap.locationdemo AKDQS3LE59NEC12RJ0H6 -->
+    <uses-sdk android:minSdkVersion="14" />
+
+    <!--
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />-->
+    
+    <!-- android6.0以上（包含6.0）需要开发者动态申请以下3个权限，才能正常使用定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+     <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.rtmap.locationdemo.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rtmap.locationdemo.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.LocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.MapLocationPoiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.MapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.LocMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.HtmlLocMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.MapPoiCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.BuildListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.TextLocationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.draw.DrawIconMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.draw.DrawIconAnimatorMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.ar.ArShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.MapColorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.NavigationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.MapLongClickActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.rtmap.locationdemo.TextNavigationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 请将申请的key替换android:value="你的key" -->
+        <meta-data
+            android:name="RTMAP_KEY"
+            android:value="d01XlE3Zpv" />
+
+        <service
+            android:name="com.rtm.location.logic.RtmapLbsService"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+        </service>
+    </application>
+
+</manifest>

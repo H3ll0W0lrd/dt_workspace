@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:rtmAttr="http://schemas.android.com/apk/res/com.rtm.frm"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/test_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_title"
+        android:visibility="visible" />
+
+    <!-- 地图缩放按钮 -->
+
+    <include
+        android:id="@+id/layout_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        layout="@layout/layout_zoom" />
+
+    <!-- ar按钮 -->
+
+    <Button
+        android:id="@+id/btn_ar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/loc_ar_lay"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/arguide_bg_new"
+        android:visibility="gone" />
+    <!-- 地图下面的定位按钮和ar按钮lay -->
+
+    <RelativeLayout
+        android:id="@+id/loc_ar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp" >
+
+        <!-- 定位按钮 -->
+
+        <ImageButton
+            android:id="@+id/button_locate"
+            android:layout_width="@dimen/fragment_map_control_img_width"
+            android:layout_height="@dimen/fragment_map_control_img_width"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/location_center"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+
+        <!-- 切换到室外按钮 -->
+
+        <Button
+            android:id="@+id/btn_change_build"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/out_door_bg_new"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.rtm.frm.view.NavTitle
+        android:id="@+id/nav_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_title_height"
+        rtmAttr:navLeftImg="@drawable/magnifier"
+        rtmAttr:navLeftImgHeight="@dimen/nav_title_img_height"
+        rtmAttr:navLeftImgWidth="@dimen/nav_title_img_width"
+        rtmAttr:navPaddingLeft="@dimen/nav_title_padding_left"
+        rtmAttr:navPaddingRight="@dimen/nav_title_padding_right"
+        rtmAttr:navRightImg="@drawable/radar"
+        rtmAttr:navRightImgHeight="@dimen/nav_title_img_height"
+        rtmAttr:navRightImgWidth="@dimen/nav_title_img_width" />
+
+    <!-- 地图通知条 -->
+
+    <LinearLayout
+        android:id="@+id/rtmap_push_msg_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_map_notf_height"
+        android:layout_below="@id/nav_title"
+        android:background="@color/map_notification_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="@dimen/fragment_map_notf_img_width"
+            android:layout_height="@dimen/fragment_map_notf_img_height"
+            android:layout_marginLeft="@dimen/fragment_map_notf_img_margin_left"
+            android:background="@drawable/icon_gcoding" />
+
+        <TextView
+            android:id="@+id/rtmap_push_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/fragment_map_notf_text_padding_left"
+            android:singleLine="true"
+            android:textColor="@color/map_notification_text" />
+        <!-- android:text="[附近有1条新优惠信息]鲜果缤纷所有大杯7折" -->
+
+        <View
+            android:layout_width="@dimen/fragment_map_notf_right_space_width"
+            android:layout_height="@dimen/fragment_map_notf_right_space_height"
+            android:layout_marginRight="@dimen/fragment_map_notf_right_space_margin_right" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/black"
+        android:layout_alignTop="@+id/test_map_view"
+        android:text="TextView" />
+
+</RelativeLayout>

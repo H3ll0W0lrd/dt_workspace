@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="40dp"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/btn_ar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/arguide_bg"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/button_locate"
+        android:layout_width="@dimen/fragment_map_control_img_width"
+        android:layout_height="@dimen/fragment_map_control_img_width"
+        android:background="@drawable/locate_normal_bg"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible" />
+    <ImageButton
+        android:id="@+id/button_arguide"
+        android:layout_width="@dimen/fragment_map_control_img_width"
+        android:layout_height="@dimen/fragment_map_control_img_width"
+        android:layout_marginTop="@dimen/fragment_map_control_img_margin"
+        android:background="@drawable/locate_arguide_bg"
+        android:contentDescription="@string/app_name" 
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/button_nav_close"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/fragment_map_control_img_margin"
+        android:background="@drawable/locate_nav_close"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone" />
+
+</LinearLayout>

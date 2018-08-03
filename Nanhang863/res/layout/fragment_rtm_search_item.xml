@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="10dp"
+    tools:context="com.rtmap.indoor_switch.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_poi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size7" />
+
+    <TextView
+        android:id="@+id/tv_poi_floor"
+        android:layout_width="wrap_content"
+        android:textColor="@color/gray_dark"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/img_arr"
+        android:textSize="@dimen/text_size7" />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/img_arr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_arrow_right" />
+</RelativeLayout>

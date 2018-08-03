@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.rtmap.indoor_switch.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_search_title"
+        style="@style/title_bar_style" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/left" />
+
+        <EditText
+            android:id="@+id/edt_key_word"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bord_shap"
+            android:hint="搜索"
+            android:imeActionLabel="Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_key_word"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/search_icon" />
+        <ImageView
+            android:id="@+id/search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/edt_key_word"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:src="@drawable/search_cancel" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:divider="@color/line_gray_1"
+        android:dividerHeight="2px"
+        android:id="@+id/lv_search_result"
+        android:layout_width="match_parent"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search_title">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/promotion_item_img2"
+        android:layout_width="34.5dp"
+        android:layout_height="34.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/muying" />
+
+    <TextView
+        android:id="@+id/promotion_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/promotion_item_img2"
+        android:text="开启积分兑换" />
+
+    <CheckBox
+        android:id="@+id/promotion_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/v4_checkbox_bg"
+        android:button="@null"
+        android:checked="true"
+        android:clickable="true"
+        android:gravity="center_vertical" />
+
+    <View
+        android:id="@+id/splitline1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/promotion_item_img2"
+        android:layout_marginTop="10dp"
+        android:background="@color/fragment_loading_background" />
+
+</RelativeLayout>

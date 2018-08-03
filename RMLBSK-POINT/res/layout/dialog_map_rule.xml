@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rule_rounded"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="请输入距离（mm）"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView style="@style/set_line_style" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/dt_trans"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView style="@style/set_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dt_trans"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:src="@color/grayblack" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dt_trans"
+            android:text="确定"
+            android:textColor="#e33854"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

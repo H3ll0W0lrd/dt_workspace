@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/title_font_style"
+            android:text="标题" />
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/title_back_style" />
+
+        <TextView
+            android:id="@+id/end_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="结束"
+            android:textColor="@color/list_grid_item_text"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            android:src="@drawable/main_search" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#d1d1d1" />
+    </RelativeLayout>
+
+    <com.rtmap.wisdom.util.statellite.TouchPadLayout
+        android:id="@+id/map_touch_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar" >
+
+        <com.rtm.frm.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title_bar" />
+
+        <com.rtmap.wisdom.util.statellite.FanView
+            android:id="@+id/map_touch_self_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.rtmap.wisdom.util.statellite.FanView
+            android:id="@+id/map_touch_outside_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.rtmap.wisdom.util.statellite.TouchPadLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/navigate_text"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="#99ffffff"
+            android:gravity="center"
+            android:text="正为你导向目的地办公室\n您目前位于男厕附近"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/cesuo"
+            style="@style/map_right_bar_icon_style"
+            android:src="@drawable/map_cesuo2" />
+
+        <ImageView
+            android:id="@+id/futi"
+            style="@style/map_right_bar_icon_style"
+            android:src="@drawable/map_futi2" />
+
+        <ImageView
+            android:id="@+id/dianti"
+            style="@style/map_right_bar_icon_style"
+            android:src="@drawable/map_dianti2" />
+
+        <TextView
+            android:id="@+id/floor_text"
+            style="@style/map_right_bar_icon_style"
+            android:background="@drawable/map_floor_bg"
+            android:gravity="center"
+            android:text="F10"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/map_loc_sign"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="-12dp"
+            android:src="@drawable/map_floor_myloc_sign" />
+
+        <ImageView
+            android:id="@+id/tingche"
+            style="@style/map_right_bar_icon_style"
+            android:src="@drawable/map_tingche"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/map_loc_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/map_loc_normal" />
+
+    <TextView
+        android:id="@+id/map_che"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fb2790"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="我要停车"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/map_sign_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fb2790"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/map_loc_btn_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_loc_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:text="点击重新定位"
+        android:textColor="@color/search_text_color"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

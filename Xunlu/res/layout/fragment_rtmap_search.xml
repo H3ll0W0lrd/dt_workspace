@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.rtm.frm.activity.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="搜索内容"
+            android:singleLine="true" />
+    </LinearLayout>
+	<LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/search_lay"
+	        android:background="@android:color/white" 
+	        android:orientation="vertical">
+	    <ListView
+	        android:id="@+id/floor_list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	
+	    <ListView
+	        android:id="@+id/search_list_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone" >
+	    </ListView>
+	</LinearLayout>
+</RelativeLayout>

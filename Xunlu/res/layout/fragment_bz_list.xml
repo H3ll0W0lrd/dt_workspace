@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bz_list_bg" >
+    
+    
+    <FrameLayout
+        android:id="@+id/nav_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_title_height"
+        android:background="@android:color/white" >
+        
+        <LinearLayout 
+            android:id="@+id/lin_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:clickable="true">
+            
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="25dp"
+                android:src="@drawable/bz_list_selector" 
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tab1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的宝箱"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </FrameLayout>
+    
+    <ImageView 
+        android:id="@+id/img_bz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baoxiang_list_top"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nav_title"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+    
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/bz_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/room_fav_body_shape"
+        android:divider="@drawable/slid_list_driver"
+        android:layout_below="@+id/img_bz"
+        android:layout_marginBottom="20dp"
+        android:dividerHeight="@dimen/sliding_menu_list_driver" 
+        android:visibility="gone"
+        android:scrollbars="none">
+    </ListView>
+    
+    <ImageView 
+        android:id="@+id/img_bg_no_bz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_bz_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

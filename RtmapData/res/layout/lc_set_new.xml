@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/title_font_style"
+            android:text="设置" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="方向键移动距离(像素) : "
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/adjust"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="numberSigned"
+                    android:text="5"
+                    android:textColor="@color/title_color"
+                    android:textSize="18sp"
+                    android:textStyle="bold" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_item_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="定位服务"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/location_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="设置默认major"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/display_major"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="90"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <RadioGroup
+                android:id="@+id/server_group"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="服务器类型："
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="测试"
+                    android:textColor="@color/title_color"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="正式"
+                    android:textColor="@color/title_color"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <ImageView style="@style/set_line_style" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="采集模式"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pick_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="poi采集"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="web工具链接"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/web_url"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/blue_btn"
+                    android:gravity="center"
+                    android:text="前往"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="beacon扫描工具"
+                    android:textColor="@color/center_record_item_time_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/open_beacon_scanner"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/blue_btn"
+                    android:gravity="center"
+                    android:text="打开"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="版本号："
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <TextView
+                android:id="@+id/lib_version"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="定位库："
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp" />
+
+            <ImageView style="@style/set_line_style" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_margin="25dp"
+                android:background="@drawable/blue_btn"
+                android:gravity="center"
+                android:text="注销"
+                android:textColor="@color/login_text_color"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:text="联系作者"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/qq"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="QQ(点击复制)：953022119"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ImageView
+                style="@style/set_line_style"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="手机(点击拨打)：13126965104"
+                android:textColor="@color/center_record_item_time_color"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

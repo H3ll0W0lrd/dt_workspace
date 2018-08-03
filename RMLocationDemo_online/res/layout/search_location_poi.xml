@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/wc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="35dp"
+        android:text="卫生间"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wc"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:text="扶梯"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/poibtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/stair"
+        android:layout_marginTop="45dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        android:text="获取周围POI" />
+
+</RelativeLayout>

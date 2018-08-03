@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/main_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_submit_tmp"
+            style="@style/header_btn_style"
+            android:checked="true"
+            android:text="待提交" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:src="@color/red" />
+
+        <RadioButton
+            android:id="@+id/main_submit"
+            style="@style/header_btn_style"
+            android:text="已提交" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:src="@color/red" />
+
+        <RadioButton
+            android:id="@+id/main_preview"
+            style="@style/header_btn_style"
+            android:text="可预览" />
+    </RadioGroup>
+
+    <ImageView
+        style="@style/set_line_style"
+        android:layout_height="1dp"
+        android:src="@color/red" />
+
+</LinearLayout>

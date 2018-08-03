@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" 
+    android:layout_gravity="center">
+    
+    <RelativeLayout
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+	    android:layout_marginTop="15dip"
+ 		android:background="@drawable/login_bg" >
+ 		
+        <ImageButton
+	        android:id="@+id/button_close"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_login_close"
+	        android:background="@drawable/standard_button_bg"
+	        android:layout_alignParentRight="true"
+	        />
+        
+        <ImageView
+            android:id="@+id/image_login"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/icon_login_title"
+        	android:layout_centerHorizontal="true"
+	        android:layout_marginTop="30dip"
+        	/>
+        
+        <EditText 
+            android:id="@+id/edit_user"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/login_user_bg"
+        	android:layout_margin="10dip"
+        	android:layout_centerHorizontal="true"
+        	android:layout_below="@+id/image_login"
+        	android:paddingLeft="28dip"
+        	android:textSize="16sp"
+        	android:singleLine="true"
+        	android:textColor="#66000000"
+            />
+        
+        <EditText 
+            android:id="@+id/edit_password"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:inputType="textPassword"
+        	android:background="@drawable/login_password_bg"
+        	android:layout_margin="10dip"
+        	android:layout_centerHorizontal="true"
+        	android:layout_below="@+id/edit_user"
+        	android:paddingLeft="28dip"
+        	android:textSize="16sp"
+        	android:singleLine="true"
+        	android:textColor="#66000000"
+            />
+        
+        <Button
+            android:id="@+id/button_login_ok"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/login_ok_bg"
+        	android:layout_margin="10dip"
+        	android:layout_centerHorizontal="true"
+        	android:layout_below="@+id/edit_password"
+            />
+        
+    </RelativeLayout>
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_login"
+        />
+</FrameLayout>

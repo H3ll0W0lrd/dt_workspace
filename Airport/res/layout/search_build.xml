@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rtmap.indoor_switch.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_search_title"
+        style="@style/title_bar_style" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@drawable/left" />
+
+        <EditText
+            android:id="@+id/edt_key_word"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_toRightOf="@+id/img_back"
+            android:layout_weight="1"
+            android:background="@drawable/gray_bord_shap"
+            android:hint="当前城市商场"
+            android:imeActionLabel="Search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="搜索"
+            android:textColor="#007aff"
+            android:textSize="@dimen/text_size6" />
+    </RelativeLayout>
+
+    <ListView
+        android:divider="@color/line_gray_1"
+        android:dividerHeight="2px"
+        android:id="@+id/lv_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_search_title">
+
+    </ListView>
+
+</RelativeLayout>

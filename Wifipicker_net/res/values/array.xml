@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gathering_modes">
+        <item>@string/title_gather_mode_normal</item>
+		<item>@string/title_gather_mode_walk</item>
+	</string-array>
+	
+    <string-array name="commit_walk">
+        <item>@string/title_commit_wifi</item>
+	</string-array>
+	
+    <string-array name="commit_normal">
+        <item>@string/title_commit_wifi</item>
+        <item>@string/title_commit_poi</item>
+	</string-array>
+</resources>

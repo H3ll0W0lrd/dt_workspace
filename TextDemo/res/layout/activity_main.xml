@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.textdemo.MainActivity" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <com.example.textdemo.view.DTStatelliteView
+        android:id="@+id/dTStatelliteView1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" >
+    </com.example.textdemo.view.DTStatelliteView>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content" />
+
+            <com.example.textdemo.view.DTDrawView
+                android:id="@+id/dTDrawView1"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent" >
+            </com.example.textdemo.view.DTDrawView>
+
+            <com.example.textdemo.view.DTHexagonView
+                android:id="@+id/dTHexagonView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" >
+            </com.example.textdemo.view.DTHexagonView>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fan" />
+
+            <com.example.textdemo.view.DTCircleImage
+                android:id="@+id/dTCircleImage1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.example.textdemo.view.DTCircleImage>
+
+            <com.example.textdemo.view.DTSurfaceView
+                android:id="@+id/dTSurfaceView1"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

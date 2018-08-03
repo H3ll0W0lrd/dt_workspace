@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg" >
+
+    <com.rtmap.experience.util.view.DTListView
+        android:id="@+id/list"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:layout_height="wrap_content" >
+    </com.rtmap.experience.util.view.DTListView>
+
+</RelativeLayout>

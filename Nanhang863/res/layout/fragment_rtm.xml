@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.rtm.frm.map.MapView
+        android:id="@+id/mv_rtm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.rtm.frm.map.MapView>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="32dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_build_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/text_size4" />
+
+        <ImageView
+            android:id="@+id/img_scan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_scan" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/tv_floor"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/round_shape"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/magnifier" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_floor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/round_shape"
+        android:drawablePadding="0dp"
+        android:drawableRight="@drawable/arrow_right"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text_size8" />
+
+    <LinearLayout
+        android:id="@+id/ll_clean_nav_line"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_floor"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_shape"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_clean"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/icon_clean" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_my_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_floor"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/local_my" />
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</RelativeLayout>

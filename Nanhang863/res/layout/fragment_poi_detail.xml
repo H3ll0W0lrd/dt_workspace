@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/normal_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/poi_detail_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/poi_detail_margin_left"
+        android:layout_marginRight="@dimen/poi_detail_margin_left"
+        android:background="@drawable/poi_detail_bg" >
+
+        <ImageView
+            android:id="@+id/imageview_poi"
+            android:layout_width="@dimen/poi_detail_img_width"
+            android:layout_height="@dimen/poi_detail_img_width"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/poi_detail_margin_top"
+            android:scaleType="center"
+            android:src="@drawable/ar_arrow" />
+
+        <ImageView
+            android:id="@+id/imageview_split"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageview_poi"
+            android:layout_marginLeft="@dimen/poi_detail_content_margin_left"
+            android:layout_marginRight="@dimen/poi_detail_content_margin_left"
+            android:layout_marginTop="@dimen/poi_detail_margin_top"
+            android:scaleType="center"
+            android:src="@drawable/poi_detail_split" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_split"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/poi_detail_content_margin_left"
+            android:layout_marginRight="@dimen/poi_detail_content_margin_left"
+            android:layout_marginTop="@dimen/poi_detail_margin_top"
+            android:maxLines="5"
+            android:minLines="5"
+            android:ellipsize="end"
+            android:text="poi name"
+            android:textSize="@dimen/poi_detail_content_text_size"
+            android:textColor="@color/gray_dark" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:paddingTop="@dimen/poi_detail_btn_padding_top"
+            android:paddingBottom="@dimen/poi_detail_btn_padding_top"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_navi_start"
+                android:layout_weight="1.0"
+                android:layout_width="@dimen/poi_detail_confirm_btn_width"
+                android:layout_height="@dimen/poi_detail_btn_height"
+                android:text="选择起点" 
+                android:textColor="@color/white"
+                android:background="@drawable/poi_detail_btn_navi_bg"/>
+            
+             <Button
+                android:id="@+id/btn_navi_end"
+                android:layout_weight="1.0"
+                android:layout_width="@dimen/poi_detail_confirm_btn_width"
+                android:layout_height="@dimen/poi_detail_btn_height"
+                android:layout_toRightOf="@+id/btn_navi_start"
+                android:layout_marginLeft="10dp"
+                android:text="选择终点"
+                android:textColor="@color/white"
+                android:background="@drawable/poi_detail_btn_navi_bg" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

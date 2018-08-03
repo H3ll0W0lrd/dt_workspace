@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <FrameLayout
+        android:id="@+id/layout_nav"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_bg" >
+
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left" >
+
+            <ImageButton
+                android:id="@+id/button_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/standard_button_bg"
+                android:src="@drawable/icon_back" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/headbar_virtical_bg" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/headbar_titleimage"
+                android:layout_toRightOf="@+id/text_title"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/guangfa_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|right" >
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/headbar_virtical_bg" />
+
+            <Button
+                android:id="@+id/button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/standard_button_bg"
+                android:text="注销" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/list_builds"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_nav"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdgeLength="0dip"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" />
+
+</RelativeLayout>
